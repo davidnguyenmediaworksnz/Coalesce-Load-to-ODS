@@ -1,14 +1,14 @@
 fileVersion: 1
-id: Dimension
-isDisabled: true
+id: "10"
+isDisabled: false
 metadata:
-  defaultStorageLocation: null
+  defaultStorageLocation: ODS
   error: null
   nodeMetadataSpec: |-
-    capitalized: Dimension
-    short: DIM
+    capitalized: ODS
+    short: ODS
     tagColor: '#1E339A'
-    plural: Dimensions
+    plural: ODS
 
     config:
     - groupName: Options
@@ -50,46 +50,16 @@ metadata:
         isRequired: false
 
     systemColumns:
-    - displayName: '{{NODE_NAME}}_KEY'
-      transform: ''
-      dataType: NUMBER
-      placement: beginning
-      attributeName: isSurrogateKey
-
-    - displayName: SYSTEM_VERSION
-      transform: ''
-      dataType: NUMBER
-      placement: end
-      attributeName: isSystemVersion
-
-    - displayName: SYSTEM_CURRENT_FLAG
-      transform: ''
-      dataType: VARCHAR
-      placement: end
-      attributeName: isSystemCurrentFlag
-
-    - displayName: SYSTEM_START_DATE
-      transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
-      dataType: TIMESTAMP
-      placement: end
-      attributeName: isSystemStartDate
-
-    - displayName: SYSTEM_END_DATE
-      transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
-      dataType: TIMESTAMP
-      placement: end
-      attributeName: isSystemEndDate
-
-    - displayName: SYSTEM_CREATE_DATE
+    - displayName: DSS_CREATE_DATE
       transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
       dataType: TIMESTAMP
       placement: end
       attributeName: isSystemCreateDate
 
-    - displayName: SYSTEM_UPDATE_DATE
+    - displayName: DSS_UPDATE_DATE
       transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
       dataType: TIMESTAMP
       placement: end
       attributeName: isSystemUpdateDate
-name: Dimension
+name: ODS
 type: NodeType

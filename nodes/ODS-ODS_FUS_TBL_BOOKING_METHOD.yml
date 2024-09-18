@@ -1,0 +1,156 @@
+fileVersion: 1
+id: ae31c2e7-d392-49c6-a5f9-da43be1a1d4f
+name: ODS_FUS_TBL_BOOKING_METHOD
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f0e3f69-2f7f-4857-8228-264e957fa061
+          stepCounter: ae31c2e7-d392-49c6-a5f9-da43be1a1d4f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: UID_BOOKING_METHOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2498dcbf-4ad1-4617-af82-1f71bb3e4950
+                stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b1b8257-0d50-4c86-8cbb-5244e051b3b5
+          stepCounter: ae31c2e7-d392-49c6-a5f9-da43be1a1d4f
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c2a8418-f9bc-4522-a208-22739eeedff3
+                stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 117766b5-1811-4cae-b826-fd7a7fa361bb
+          stepCounter: ae31c2e7-d392-49c6-a5f9-da43be1a1d4f
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8c1dfeae-204c-4fa1-98d7-77917b95ddf6
+                stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20f86947-f2a6-4a98-a9b9-31553a190377
+          stepCounter: ae31c2e7-d392-49c6-a5f9-da43be1a1d4f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MEM_AD_ORDER_TERMS_AND_CONDITIONS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a8ace58-f93b-4112-8814-2cccf6775f30
+                stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5b42a87-b36c-4c86-a4cb-f890bbbd5a56
+          stepCounter: ae31c2e7-d392-49c6-a5f9-da43be1a1d4f
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0649e6af-da7b-4f0c-892d-b79e89183244
+                stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3266dc46-2600-4c5c-a0f0-0ed13075c358
+          stepCounter: ae31c2e7-d392-49c6-a5f9-da43be1a1d4f
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 90ba7c1d-a650-4ab8-9d01-002ea6bbcf02
+                stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1601a71f-fca9-46b5-91ec-7463242f0c8d
+          stepCounter: ae31c2e7-d392-49c6-a5f9-da43be1a1d4f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a2d8053d-b735-42d7-b377-99b981684821
+          stepCounter: ae31c2e7-d392-49c6-a5f9-da43be1a1d4f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_BOOKING_METHOD
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_BOOKING_METHOD') }} "LOAD_FUS_TBL_BOOKING_METHOD"
+        name: ODS_FUS_TBL_BOOKING_METHOD
+        noLinkRefs: []
+  name: ODS_FUS_TBL_BOOKING_METHOD
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

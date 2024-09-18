@@ -1,0 +1,170 @@
+fileVersion: 1
+id: ddb649cb-8add-41df-800f-54ace408e11f
+name: ODS_FUS_TBL_BRAND
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 044f5b26-9e5e-4d70-9651-a4cc02d0471e
+          stepCounter: ddb649cb-8add-41df-800f-54ace408e11f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: UID_BRAND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b4816e88-0d36-438e-9a2c-851f5f3b62ca
+                stepCounter: e4abaae7-e4a1-411e-affa-197e2da1a534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d138079-7349-4abd-91f9-769384089ed9
+          stepCounter: ddb649cb-8add-41df-800f-54ace408e11f
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 16389b76-d3d4-42b2-a5a9-3ec2da297670
+                stepCounter: e4abaae7-e4a1-411e-affa-197e2da1a534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 948fcc16-c256-4192-bb6b-67c2e226da01
+          stepCounter: ddb649cb-8add-41df-800f-54ace408e11f
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61ed3ef7-f38a-485e-ae75-da4cd72a6d45
+                stepCounter: e4abaae7-e4a1-411e-affa-197e2da1a534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39d33c32-3cd1-4937-bb9b-7311d242216a
+          stepCounter: ddb649cb-8add-41df-800f-54ace408e11f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PRODUCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6fc8d407-aeee-4b88-835f-efdb7d6341bf
+                stepCounter: e4abaae7-e4a1-411e-affa-197e2da1a534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9097f7a-ba96-4cc3-98bf-202db2940784
+          stepCounter: ddb649cb-8add-41df-800f-54ace408e11f
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_EXTERNAL_REF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c80cc0fb-06b4-4507-9b01-72db996da3d5
+                stepCounter: e4abaae7-e4a1-411e-affa-197e2da1a534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76c27dee-5e07-4781-9f68-1a754e5b8ef3
+          stepCounter: ddb649cb-8add-41df-800f-54ace408e11f
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3c296b38-2e49-4d7e-b6a1-0c8eeed041c7
+                stepCounter: e4abaae7-e4a1-411e-affa-197e2da1a534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 412a9889-b1be-47fa-a5ce-91fa3b584844
+          stepCounter: ddb649cb-8add-41df-800f-54ace408e11f
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e8d66a6-4485-4b25-9e65-182a6b96692b
+                stepCounter: e4abaae7-e4a1-411e-affa-197e2da1a534
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8875ec82-55e7-463a-9629-3e70ece33402
+          stepCounter: ddb649cb-8add-41df-800f-54ace408e11f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00b4f0c2-195d-451b-8878-784bf5824198
+          stepCounter: ddb649cb-8add-41df-800f-54ace408e11f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_BRAND
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_BRAND') }} "LOAD_FUS_TBL_BRAND"
+        name: ODS_FUS_TBL_BRAND
+        noLinkRefs: []
+  name: ODS_FUS_TBL_BRAND
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

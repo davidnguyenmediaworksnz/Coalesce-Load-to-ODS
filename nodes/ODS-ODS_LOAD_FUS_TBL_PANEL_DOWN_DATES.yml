@@ -1,0 +1,225 @@
+fileVersion: 1
+id: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+name: ODS_LOAD_FUS_TBL_PANEL_DOWN_DATES
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93ce34df-bcc8-411c-b7ae-67c34c04ea1d
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PANEL_DOWN_DATES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 512cc1b2-5f8a-4e8b-a168-257ddd0f59f1
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4fc7814-c94f-496a-9bfb-542a4f0f5bf4
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PANEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2db06336-caa2-439c-9d72-3fa202a5aa5b
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5860b08-8c28-4cc0-b345-57feaf462293
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PANEL_DOWN_DATES_REASON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43fa444e-e7b2-4f02-b686-024ddeeb00cb
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57a43743-a427-436e-ab45-03f28e5d8e21
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DTE_DOWN_FROM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae1477db-ecf7-4d53-8558-1d0fcfd6d81e
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b7699e8-b2c0-435c-b7bd-c9e1d25b9bb9
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DTE_DOWN_TO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a569f05-eeb1-419b-adce-21ab55a7143d
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 521de2a2-b3e1-4233-ab88-b5457bdd6382
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MEM_FULL_REASON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 27cd1aa6-3391-4170-a653-787110165999
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d47a9bcc-cb40-4538-a76b-fa711192af98
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BOO_ALLOW_BOOKING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1679edc6-50a5-47fb-9c61-d32ddb662046
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76fadf89-920b-4216-8adf-860f51dba317
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_DIGITAL_PANEL_HARDWARE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ffcb9c04-6705-4426-b3cf-cb96a74c9769
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 788c70af-fbda-44ab-938f-3347e9fcb21e
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PANEL_DOWN_DATES_ADDITIONAL_REASON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 990763e3-1438-4b31-8e61-ad2064d117ed
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d99debbe-bcd2-473b-aaa5-57ca2776798d
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 06ea79cb-0a77-49d1-a898-85708dd94774
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c891fa07-445f-4cc0-adfc-bc7f7d22f623
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b16b80e-fc44-460c-af10-318cf99b9a32
+                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 932f3944-5d90-41ea-8747-33441e3da50b
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db945c3e-3bef-4827-b683-7fe7d060a185
+          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_PANEL_DOWN_DATES
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_PANEL_DOWN_DATES') }} "LOAD_FUS_TBL_PANEL_DOWN_DATES"
+        name: ODS_LOAD_FUS_TBL_PANEL_DOWN_DATES
+        noLinkRefs: []
+  name: ODS_LOAD_FUS_TBL_PANEL_DOWN_DATES
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

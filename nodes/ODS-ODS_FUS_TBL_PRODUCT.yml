@@ -1,0 +1,184 @@
+fileVersion: 1
+id: 2365ba21-9f4e-4363-b733-3e45f8516870
+name: ODS_FUS_TBL_PRODUCT
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75fd89e2-48b6-4e9a-bde3-ffe0c640b1e9
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6dcdf0fb-ade2-4e04-a31f-fbdbfb70263b
+                stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6609b91-258a-4020-80b9-b4f3b37a20be
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: UID_PRODUCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a906703-a90c-4ec7-ab92-efa4183b9392
+                stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d74878b2-6703-4182-91e2-3aec2e6a9df1
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bdc9e404-afe7-4569-9b89-7c78eee28d6e
+                stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c8ce127-1e5c-4210-a7f2-2f4360765a34
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BOO_TOBACCO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eac1ec07-5713-4ef5-a82b-d1d8e9fc4c22
+                stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f56cefe7-02e7-44c3-8db9-49813d341735
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BOO_ALCOHOL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc5d1f85-56cf-4ad2-9da9-682b26c68bde
+                stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79fd1ef4-ddff-42f0-9f16-1f36941ad126
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_R_PARENT_PRODUCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 908d456b-634d-47f4-b6b5-a944f86b2fc1
+                stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e28504c-9a92-4554-8162-d88c19d699a4
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf87109a-43fa-4335-9eaa-056b81a31bb5
+                stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 440c6889-ebfc-4297-bf0e-a880c78a184d
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 510a7eca-2bdf-449c-96c2-bc3cd2f68954
+                stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4442f6d7-f146-415f-a7dc-acda368e7aea
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b246af8-844a-4e02-be19-3a5a0338c11c
+          stepCounter: 2365ba21-9f4e-4363-b733-3e45f8516870
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_PRODUCT
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_PRODUCT') }} "LOAD_FUS_TBL_PRODUCT"
+        name: ODS_FUS_TBL_PRODUCT
+        noLinkRefs: []
+  name: ODS_FUS_TBL_PRODUCT
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

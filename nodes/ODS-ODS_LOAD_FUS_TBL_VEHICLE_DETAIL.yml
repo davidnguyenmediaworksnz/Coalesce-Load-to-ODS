@@ -1,0 +1,141 @@
+fileVersion: 1
+id: b148e4b6-633a-4587-901b-5d41ccc09f91
+name: ODS_LOAD_FUS_TBL_VEHICLE_DETAIL
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3811b7b5-6aa2-4d81-91be-4039e3c71885
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_VEHICLE_DETAIL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3850a04d-e944-45ed-a027-cf6538fe3f22
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3e11f5e-c990-4f84-978f-53bb92b4b351
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44c673c5-5464-45a0-9302-c0391bca1f53
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c035ec3-1f7c-42e4-b5d4-f09f87515302
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bfbf076d-b5e0-4ad9-b415-74131df36865
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e724da7a-c88f-4a2b-8819-87b18359cd6e
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 344e9c47-509b-4030-8f67-30d215ddba4c
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71d56ba8-f6b7-4074-ab68-976571f60cca
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a2bea412-2b07-47b6-b2ef-b644c22979cd
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7350871-bf53-43b2-ae52-24707ed8c29c
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04e3d4b5-5799-475d-83b2-60f3bfb0d2ca
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_VEHICLE_DETAIL
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_VEHICLE_DETAIL') }} "LOAD_FUS_TBL_VEHICLE_DETAIL"
+        name: ODS_LOAD_FUS_TBL_VEHICLE_DETAIL
+        noLinkRefs: []
+  name: ODS_LOAD_FUS_TBL_VEHICLE_DETAIL
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

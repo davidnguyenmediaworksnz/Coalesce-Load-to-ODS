@@ -1,0 +1,435 @@
+fileVersion: 1
+id: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+name: ODS_LOAD_FUS_TBL_RATE_CARD_SELLING
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc5f242c-fe5d-46f3-b520-430a989aee62
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_RATE_CARD_SELLING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 83bec162-9772-4e20-954c-bb65220949f3
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a73be78e-3b33-4c50-8d3f-79bc8da05a78
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INT_RATE_CARD_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29eeb969-b787-4e7a-9ef8-5247abe344b8
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed1f9d09-e62a-461c-b07d-50d814853d91
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: CUR_RATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3836fda2-85ad-4d3e-80fb-0dd1eb632678
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c199d03b-38d5-4ec7-a850-ce6a8d5f408d
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: CUR_MARKET_RATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 09b9ed9b-e447-46de-bef8-adc9bb22647d
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8544d09-1383-4f52-8d0d-32e90dbe18d3
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: CUR_MIN_RATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fdd891a5-1bca-4e5b-bdd6-eae0e8be8cab
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 479da10a-0485-4219-86b6-7355897c69ae
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: CUR_DIGITAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 487a36a5-c362-442b-8f84-f3a8373a709a
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e842ccc3-e298-4ae6-9d6b-3fd6207a4ae8
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: STR_PERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa236d42-6c6e-40bc-af37-fd87355a9cdf
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fcd38332-137c-4dcd-b1d1-caeafb159829
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DTE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40bc9f00-d607-468b-bbe4-5c03d62b731f
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c19e12fa-7683-42c9-8888-b64aa87deac2
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_RATE_CARD_CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2f945698-4d41-4220-99ab-66d65eaffc66
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b772f62-6536-4e02-9698-7f5b1abf54c0
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_CURRENCY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 65a0e267-daba-492c-8d9e-77857c562c64
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: efda07eb-dd98-455b-b753-5013ba1b09a6
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_TV_AREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a52511a3-6d86-4ffe-aa87-6451585e70d7
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e4960b1-ef73-48ea-8eb9-fa81b4159eb0
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_SIZE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d99c591-b381-4309-bd9d-5f9c8f61f2e5
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98d0bd35-5360-4a73-8017-8f5432e7512a
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_AREA_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c52443eb-4476-464c-8349-4db0bbd204f8
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e5c18a2-1c33-4310-a089-f4880c67d618
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_AREA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8771ef1a-9be9-4d27-8f63-f817059793d9
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fca94682-c875-4918-82b3-acdfa3c29515
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PANEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2079ad63-de27-4461-8ce0-c6d91f5ec213
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b4c7170-51c3-48f3-ba0b-deed8c3e95aa
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_POSTER_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cdb4363a-ecd7-4a06-b887-caa17682c501
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aeb31180-c56c-4d52-bafc-c713655809e0
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PANEL_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8b658d3b-f072-4847-a2c4-5bf78ba01776
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66da911d-fe12-43c9-b2ab-41a067f87698
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PACK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 226aaf5e-8f53-4fb0-b70b-8d7750b5d5b2
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 466f2b81-63f9-4bb8-9961-6efe8407a3e9
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BOO_LIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6ea36a38-420c-4490-97da-a0e2b05170e2
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57451097-5be7-4699-9e72-6e9986a83bc9
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DTT_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03b59566-b472-42eb-b8fd-971853a7db39
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: de9b2355-4f63-4421-a804-e75a12cb4f25
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_DIGITAL_PRODUCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6f96a4f6-7135-4c70-8f6f-da6eaac9243e
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8000c20f-146f-4ec9-a6ee-8c6ea07aca2f
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_FIXTURE_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f641e875-9e68-45d2-ada1-1d7a7ea73d95
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6bfc48c3-b1bc-459d-af35-4948994a01ee
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: VARCHAR(435)
+        description: ""
+        name: STR_SYS_AK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 56006e0a-bdd8-4349-ac09-a2c97ea5d5eb
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6863276e-ab0b-41b6-8608-da735941042a
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: CUR_COST_PER_ADDITIONAL_DESIGN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7434f71-6979-4554-963d-25aa19180776
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 735af570-0464-4ea1-b6a9-f833512ff66c
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 134dd859-db11-4a6f-9627-4571eee8bd2a
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87dcbfae-0afb-4200-b5b4-926efefb1778
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3f218a23-f096-46d9-9116-a099ebc1fe95
+                stepCounter: 376ebbd0-6a5e-429c-b03d-2fd0d86d61ff
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 813a2385-3ba2-4b3c-9d22-738338ab6562
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb75bba0-7f2f-4d22-9e38-409493c5f3e6
+          stepCounter: 6225558d-18f7-4b0e-bb89-5d5ba984e647
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_RATE_CARD_SELLING
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_RATE_CARD_SELLING') }} "LOAD_FUS_TBL_RATE_CARD_SELLING"
+        name: ODS_LOAD_FUS_TBL_RATE_CARD_SELLING
+        noLinkRefs: []
+  name: ODS_LOAD_FUS_TBL_RATE_CARD_SELLING
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

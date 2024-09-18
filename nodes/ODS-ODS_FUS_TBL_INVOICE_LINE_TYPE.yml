@@ -1,0 +1,184 @@
+fileVersion: 1
+id: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+name: ODS_FUS_TBL_INVOICE_LINE_TYPE
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ce15a92-ff96-4e52-bc4d-ecd24709dcaa
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: UID_INVOICE_LINE_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eb1ddc6e-69a1-477c-8077-cc16372f6384
+                stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7606b6bc-f49c-48b2-bc3c-b36be8505814
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f4b3c622-f19f-443b-afcf-71d175eb15c9
+                stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37a20912-eb95-4930-a64d-498caed1d01a
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 696ae31d-6f75-4acf-8cb3-3b70ac13454e
+                stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7c4040f-3091-41b5-99d7-fab71fbf36ea
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BOO_INCLUDE_IN_PROFITABILITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35711abf-7229-4c78-8860-de5022d2f22d
+                stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 609f6b01-a044-4e34-96f4-a67fe12410be
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BOO_ADD_VAT_TO_LINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b2d43cae-7a60-4d86-b5ba-ef8af320cca2
+                stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24340814-99ea-4ba0-94a2-f0f4433d376a
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INT_REPORT_AS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 99bff85f-75b1-442b-8c73-8dc512112e77
+                stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 172920a0-a649-4cab-b5c2-985223c66419
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c78ec950-f593-467f-b495-1fc4d4ba6011
+                stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b6e4b4d-6f78-4cc5-adf6-3b0a79445981
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 54e470a6-aad7-4398-b064-57d9d8b834bd
+                stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c77eb00c-17b2-475e-aa2e-3bf256e4c190
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a80074a2-ccf6-49af-8ac8-0bed613519be
+          stepCounter: 2cafc93d-41fc-4306-9cf8-83d7f598bcc2
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_INVOICE_LINE_TYPE
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_INVOICE_LINE_TYPE') }} "LOAD_FUS_TBL_INVOICE_LINE_TYPE"
+        name: ODS_FUS_TBL_INVOICE_LINE_TYPE
+        noLinkRefs: []
+  name: ODS_FUS_TBL_INVOICE_LINE_TYPE
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

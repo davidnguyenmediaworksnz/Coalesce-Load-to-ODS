@@ -1,0 +1,191 @@
+fileVersion: 1
+id: c3d572f4-79d6-4d44-8d49-2228cf89c672
+name: LOAD_FUS_TBL_PRODUCT
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dcdf0fb-ade2-4e04-a31f-fbdbfb70263b
+          stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a906703-a90c-4ec7-ab92-efa4183b9392
+          stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PRODUCT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bdc9e404-afe7-4569-9b89-7c78eee28d6e
+          stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eac1ec07-5713-4ef5-a82b-d1d8e9fc4c22
+          stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_TOBACCO
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc5d1f85-56cf-4ad2-9da9-682b26c68bde
+          stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_ALCOHOL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 908d456b-634d-47f4-b6b5-a944f86b2fc1
+          stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_PARENT_PRODUCT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 72f736bc-c340-4f30-ac69-f015bb824d8f
+          stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_REPORTING_PRODUCT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf87109a-43fa-4335-9eaa-056b81a31bb5
+          stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 510a7eca-2bdf-449c-96c2-bc3cd2f68954
+          stepCounter: c3d572f4-79d6-4d44-8d49-2228cf89c672
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_PRODUCT') }}
+  name: LOAD_FUS_TBL_PRODUCT
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_PRODUCT
+  type: sourceInput
+  version: 1
+type: Node

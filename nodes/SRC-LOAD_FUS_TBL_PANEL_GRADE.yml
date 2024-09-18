@@ -1,0 +1,115 @@
+fileVersion: 1
+id: 6e2ad1a6-7690-43dd-a58f-c2578d6d05bf
+name: LOAD_FUS_TBL_PANEL_GRADE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67082777-1058-454c-a4e8-c683a6e6c2d6
+          stepCounter: 6e2ad1a6-7690-43dd-a58f-c2578d6d05bf
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PANEL_GRADE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52f4df26-799e-47a7-a08a-d051df7bf520
+          stepCounter: 6e2ad1a6-7690-43dd-a58f-c2578d6d05bf
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f28f482c-6af8-4617-a947-b2d667ca2af0
+          stepCounter: 6e2ad1a6-7690-43dd-a58f-c2578d6d05bf
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 142f4966-1ec2-46f2-aa36-3e55dd1862b8
+          stepCounter: 6e2ad1a6-7690-43dd-a58f-c2578d6d05bf
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c34c83e-ec7a-49b7-8758-cd1349505f76
+          stepCounter: 6e2ad1a6-7690-43dd-a58f-c2578d6d05bf
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_PANEL_GRADE') }}
+  name: LOAD_FUS_TBL_PANEL_GRADE
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_PANEL_GRADE
+  type: sourceInput
+  version: 1
+type: Node

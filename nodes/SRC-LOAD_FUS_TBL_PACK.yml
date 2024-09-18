@@ -1,0 +1,533 @@
+fileVersion: 1
+id: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+name: LOAD_FUS_TBL_PACK
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e647fb52-9325-49a0-8bfd-514ec751bbbe
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PACK
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 691c59db-b927-458c-842d-108e3a07d4ec
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b78a329e-252e-4e7d-a6e5-99b0cc1b350f
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec154f9d-36ab-4d2b-a4dc-86fe9e6c099c
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PACK_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a5a2913-4003-4500-b439-38dd960618f4
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_PACK__ADMIN__REGION_OFFICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: df607862-ec0e-4a5b-a216-e36d87e63fc1
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DTE_START
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80c3fabb-6eef-4091-aa9f-5d19b01fd37f
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DTE_FINISH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e82eb69-bf68-445e-89db-5fa7e9c9cab7
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_SIZE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0dd4472b-2a1d-472d-84fb-0a07fd9b905b
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_ILLUMINATED_PC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36be6a30-d37c-4e00-aa1f-5969964af866
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(21,6)
+        defaultValue: ""
+        description: ""
+        name: DBL_VAI_AVERAGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1898b65-715c-44ce-ace7-0bba8c3e512c
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_STREAM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03cb6c7a-bbeb-4207-98cd-bdaf6aff787f
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LNG_NO_OF_PANELS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92ca4a30-543a-4385-99f3-d7261fce9172
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        name: CUR_COST_PER_WEEK
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b94e822-81e2-4bb4-a6e1-2ea2a7ac8b85
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PACK_MASTER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ad2c4c2-14ac-4369-a3be-d634cf8f8322
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PACK_STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4203afa1-2ab4-4f76-ad86-c65762218022
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: MEM_NOTES
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2287ee53-625f-4468-af2a-3b48b7581051
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_BOOKING_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0e0f26f-8c60-4ecd-8947-2f052bb6a7fd
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_PRICING__APPROVAL_CONTRACTOR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ffca76e-6c14-4ad9-916b-9a7cbb2f34b6
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: STR_DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 104b5e5b-3eff-4dd0-a9a9-b85cc29c1573
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_DIGITAL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1dca35ea-d8d5-46eb-ba8b-87264bc84928
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_CURRENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e52aec2-c7b7-4cf2-9a94-ae84da226ab5
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_PERIODS_SOLD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f258969-4f65-4471-97f4-3f7d5b5e8e34
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_PERIOD_SOLD_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49f4b6d3-23cf-412e-b303-414a15e1f628
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PRODUCTION_SIZE_GROUP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a42b331d-cd6a-4388-a6b4-35c3dc2b17ee
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PLAN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a2015c32-2dc4-461c-8f39-93d713b08625
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a608b1fa-b903-415c-ba4e-84e50addff1f
+          stepCounter: 2f61d817-216f-4aa5-9bc2-59fd6d09c2c5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_PACK') }}
+  name: LOAD_FUS_TBL_PACK
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_PACK
+  type: sourceInput
+  version: 1
+type: Node

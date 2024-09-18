@@ -1,0 +1,989 @@
+fileVersion: 1
+id: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+name: LOAD_FUS_TBL_AGENCY
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87558fda-2605-4467-8576-48d20badd37c
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13f09e4c-f331-43d7-bba8-156fdebba4db
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_AGENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9907ad1c-ad4e-4d05-95a0-4ac0c4e7f40d
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_PARENT_AGENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a47aa62-0717-4ff4-b205-9d6fd4602f3d
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bdb5cdc0-2a07-4990-b3d9-b7fbcf563fab
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_ADDRESS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32e45ba9-2f97-4885-b259-aa96621235f5
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_CUSTOMER_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 017a50eb-435d-415d-ab19-34f1475ec713
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_DISCOUNT_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5927681-3c9b-4cac-843e-f36857f41547
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_ACCOUNT_STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c960efe7-49ea-45e7-b6cd-b342d45c53f2
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(21,6)
+        defaultValue: ""
+        description: ""
+        name: DBL_COM_DEFAULT_PC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c45cd27d-b6c5-4ba3-852a-4c2e28822a38
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(21,6)
+        defaultValue: ""
+        description: ""
+        name: DBL_SAC_DEFAULT_PC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f50d306b-362b-44c3-9e90-9efa9c056e3e
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_VATABLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6f62408-f4c1-4010-b872-2a4069b1dce8
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: STR_TAX_REGISTER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c09c79d1-d40c-4a3e-922e-ee580ff2184d
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: STR_TAX_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc56aa59-9fd6-430f-a799-b5ca387bcdd3
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DTE_LIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05efeac5-5ad5-407c-bf79-6784a89e688f
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DTE_DEAD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2568cf60-77cb-47a5-a701-c943a3b2adb6
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: STR_TAX_OFFICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: beaaee68-5bb5-4ae5-a8ff-edf06d702b83
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_PRINCIPAL_APPROVAL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36169a81-0c0f-426d-a6cd-f9ca50f1798a
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: STR_TAX_BOOK
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b204a8b-d2e0-4295-9d3f-f0810b19601a
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: STR_TAX_SECTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d750edf8-314c-452a-b063-af49ab80a79f
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(8190)
+        defaultValue: ""
+        description: ""
+        name: MEM_INV_NOTES
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec5177d6-9345-4466-8a06-d9d0fa631d91
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_AGENCY_STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe464160-8117-40f7-8a2c-48403110d26e
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_ADMINISTRATIVE_COUNTRY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8314993-a361-4c06-aaec-8ba6d0f3395a
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_AGENCY_STATUS_REASON
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a126a74e-3f3e-4858-b93b-5b48ada217c4
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_EMAIL_INVOICES
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19c7f626-707f-4925-a4dc-9fb9f5203994
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: STR_INVOICE_RECEIPT_ADDRESS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2700c58-7e44-47c7-8448-10474e9f6d5b
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_ALSO_RECEIVE_PAPER_INVOICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb3c0369-da0b-43ce-99b8-651bae78a485
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PAYMENT_TERMS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16d9ac22-585d-48c8-8d05-cabdee2378dd
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(21,6)
+        defaultValue: ""
+        description: ""
+        name: DBL_CREDIT_LIMIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 096d7116-03ef-4b34-9ced-674dd7f8acb7
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(21,6)
+        defaultValue: ""
+        description: ""
+        name: DBL_CREDIT_USED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8b5f6e0-4477-4045-bfc4-6258c732762e
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_STOPPED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69d91cc3-f368-40a6-b67d-f379080bdb2b
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_BANK_ACCOUNT_NO
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1856cd99-4171-454c-977a-19f14ea55273
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_BANK_SORT_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 395ac393-e2fd-45fc-b49d-e677259c04b5
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: STR_BANK_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 911a7e04-6924-4601-b09f-c8dc83a642a3
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_BANK_ADDRESS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e90fe22-f8a1-4ea0-8b69-133c8635051c
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_APPROVAL_REQUIRED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc57a7ee-b0cf-4c7b-a1c6-42479e915acd
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_PARENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 152b0e9f-6606-44d0-be82-8d9bb3d5ce2a
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_CREDIT_CONTROL_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba0e22fb-9977-47b3-bd0a-0ef870768d57
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DTE_CREDIT_CHECK
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c3d947d-27d0-49f9-887c-06b1f0eabd6b
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DTE_DIRECT_DEBIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37b41543-2042-456e-ab5e-6393ca3ad8e8
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_TRADING__WEB__SERVICE_RATE_CARD_CATEGORY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6cc8010c-8f92-4fe4-a131-b0f10eb7a7ac
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_DEFAULT_CURRENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16dda075-2bb1-4ba7-ad44-fc321f4c2b68
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: STR_EXTERNAL_REF
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e3a1dc9b-0549-4067-8d5d-e2fe9b43b67a
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_CUSTOMER_GROUP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e7bb9f8-b448-4196-a848-43c8df19ade1
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: STR_ALTERNATIVE_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08aba02f-5043-4ad5-819f-2846f8fd9908
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: STR_EXTERNAL_REF2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e84857ef-6386-4f8c-bda1-290c4463d08b
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: STR_COLLECTOR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc3258f7-c70b-457e-9db1-f9860814e24d
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_AGENCY_DEBTOR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e101545-8d0c-4d60-9065-93af779235b0
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_SECONDARY_AGENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f623728-ebc0-4a95-854f-56f1e8f8b627
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_REPORT_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ce4bd39-632f-4159-bf3a-0bafe9173653
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 770739aa-32ec-4765-a105-716bf76e4a4f
+          stepCounter: 9ae52128-3590-4a6c-9300-b4bfc607cc66
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_AGENCY') }}
+  name: LOAD_FUS_TBL_AGENCY
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_AGENCY
+  type: sourceInput
+  version: 1
+type: Node

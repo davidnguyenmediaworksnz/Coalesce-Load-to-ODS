@@ -1,0 +1,552 @@
+fileVersion: 1
+id: 08647f1b-e5fc-4d97-8194-a6b559e77124
+name: LOAD_FUS_TBL_OPTION_DIGITAL_BOOKING
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3c8dcf9-3aaa-410a-980d-2684a3b2b156
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_OPTION_DIGITAL_BOOKING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20ab4876-196b-4255-be50-8d0bbcfe1f9e
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DTE_START
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5eb6dbeb-3442-44cb-92dd-58ef5e1f98e1
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: DTE_END
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 673a2aaa-89f3-48b3-8bc2-affb2521ca7c
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: TIM_SPECIFIC_START
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d6db8b6-6a0f-4a85-8b67-b056b0f536d4
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_FREQUENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6746fc8f-77ad-4d1b-aba3-cc2129dbd6fe
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_NUMBER_OF_SLOTS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a168825-fc15-4acc-9603-3b52a213325c
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_SEQUENTIAL_SLOTS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2a6feab-db46-4efc-8c4e-c1d3e030c797
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: VARCHAR(7)
+        defaultValue: ""
+        description: ""
+        name: STR_DAYS_BOOKED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbd48627-bf27-4be3-bc20-95ffb64723c9
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_MERGE_SLOTS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47eca812-d318-4a74-972a-9fc9de66176a
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_DIGITAL_PRODUCT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3928e43a-29b3-4072-bb92-e3e1f59b3461
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_OPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b9989d4-b95c-420e-812e-c1eab4cd1a0e
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d1a2a97d-cbf9-4d62-a287-3251052060c4
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_SPOT_LENGTH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cae270ad-36a8-49c2-9696-9d56003fd1a7
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_DIGITAL_BOOKING_STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e022bd91-3cea-4f41-9b23-81df510f3946
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_FILLER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef3a2767-daac-443d-80f3-5a2c85966708
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_DIGITAL_CREATIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60e0d1c1-32f1-4af5-8aed-8f50fb7dbff3
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_DIGITAL_SLOT_STRUCTURE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a99704fd-1b18-450c-b3ba-15a661081205
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_SHOW_PANELS_ON_INVOICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 144bbfce-95fd-46d1-b243-fde7c24a13c7
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_SHOW_AV_RATE_ON_INVOICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: da4c69da-a0e0-4f99-bdd7-0008a55415e8
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_BOOKING_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c0999da6-b1f6-41b3-aeb0-92b46d724254
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PLAN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3735cce5-7ec5-43c6-bd58-bfa49b66e8d8
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_TIME_FLEXIBILITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26b2a70d-b04a-4966-8011-771709847dab
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(21,6)
+        defaultValue: ""
+        description: ""
+        name: DBL_SHARE_OF_TIME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84eeeb9d-b0b8-4c15-95d9-39be9aa6d8d9
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_APPLY_POSTING_CHARGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5489ed4-7c09-48fa-89b9-9b3f1a38363f
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_APPLY_PRODUCTION_CHARGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc5d918e-61f4-41ad-9517-6fe48d16ec74
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_AMOUNT_BOOKING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49890ec3-8064-477e-83e5-e6575d3639c8
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b78dace4-b87c-4301-b04d-580137df6419
+          stepCounter: 08647f1b-e5fc-4d97-8194-a6b559e77124
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_OPTION_DIGITAL_BOOKING') }}
+  name: LOAD_FUS_TBL_OPTION_DIGITAL_BOOKING
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_OPTION_DIGITAL_BOOKING
+  type: sourceInput
+  version: 1
+type: Node

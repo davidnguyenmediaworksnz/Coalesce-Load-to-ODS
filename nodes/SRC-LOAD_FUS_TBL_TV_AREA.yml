@@ -1,0 +1,115 @@
+fileVersion: 1
+id: c0efda20-91e1-41ad-8e5b-22e0285dd8bb
+name: LOAD_FUS_TBL_TV_AREA
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6fee671-8922-4c13-b1d1-aa5d010236ff
+          stepCounter: c0efda20-91e1-41ad-8e5b-22e0285dd8bb
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7533fb1-e3a0-45ce-83e3-ce4dd2c0b0b3
+          stepCounter: c0efda20-91e1-41ad-8e5b-22e0285dd8bb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_TV_AREA
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3bd06180-0d63-47ec-9d04-d2c2a6c4d25a
+          stepCounter: c0efda20-91e1-41ad-8e5b-22e0285dd8bb
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87377b40-c59d-456b-950d-2e22f21695fe
+          stepCounter: c0efda20-91e1-41ad-8e5b-22e0285dd8bb
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e9d62a5-5077-4619-9acc-25aea2f121b9
+          stepCounter: c0efda20-91e1-41ad-8e5b-22e0285dd8bb
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_TV_AREA') }}
+  name: LOAD_FUS_TBL_TV_AREA
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_TV_AREA
+  type: sourceInput
+  version: 1
+type: Node

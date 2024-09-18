@@ -1,0 +1,172 @@
+fileVersion: 1
+id: e2eefe56-d97a-45b6-9ecb-b66568961360
+name: LOAD_FUS_TBL_INVOICE_LINE_TYPE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb1ddc6e-69a1-477c-8077-cc16372f6384
+          stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_INVOICE_LINE_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4b3c622-f19f-443b-afcf-71d175eb15c9
+          stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 696ae31d-6f75-4acf-8cb3-3b70ac13454e
+          stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 35711abf-7229-4c78-8860-de5022d2f22d
+          stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_INCLUDE_IN_PROFITABILITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2d43cae-7a60-4d86-b5ba-ef8af320cca2
+          stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_ADD_VAT_TO_LINE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99bff85f-75b1-442b-8c73-8dc512112e77
+          stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_REPORT_AS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c78ec950-f593-467f-b495-1fc4d4ba6011
+          stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 54e470a6-aad7-4398-b064-57d9d8b834bd
+          stepCounter: e2eefe56-d97a-45b6-9ecb-b66568961360
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_INVOICE_LINE_TYPE') }}
+  name: LOAD_FUS_TBL_INVOICE_LINE_TYPE
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_INVOICE_LINE_TYPE
+  type: sourceInput
+  version: 1
+type: Node

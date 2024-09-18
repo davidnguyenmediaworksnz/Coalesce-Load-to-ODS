@@ -1,0 +1,134 @@
+fileVersion: 1
+id: 0c9abcb0-dcf8-4ec4-8e2b-a5bbe9e65bca
+name: LOAD_FUS_TBL_OPTION_TARGET_PANEL_TYPE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51306436-0371-41a3-be1d-879b71674e86
+          stepCounter: 0c9abcb0-dcf8-4ec4-8e2b-a5bbe9e65bca
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_OPTION_TARGET_PANEL_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 466a4342-83e5-4aa4-a47f-fae6b7ebb03c
+          stepCounter: 0c9abcb0-dcf8-4ec4-8e2b-a5bbe9e65bca
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_OPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0711992c-5494-4c54-89f4-16dfc03b51eb
+          stepCounter: 0c9abcb0-dcf8-4ec4-8e2b-a5bbe9e65bca
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PANEL_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5426baa9-c4fe-4699-9bf7-25080f162012
+          stepCounter: 0c9abcb0-dcf8-4ec4-8e2b-a5bbe9e65bca
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        name: CUR_TARGET_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 194917bf-7040-4c76-9ed8-2c9f866ff37b
+          stepCounter: 0c9abcb0-dcf8-4ec4-8e2b-a5bbe9e65bca
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f988c6e9-aad3-484f-81b9-d9f2812c889a
+          stepCounter: 0c9abcb0-dcf8-4ec4-8e2b-a5bbe9e65bca
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_OPTION_TARGET_PANEL_TYPE') }}
+  name: LOAD_FUS_TBL_OPTION_TARGET_PANEL_TYPE
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_OPTION_TARGET_PANEL_TYPE
+  type: sourceInput
+  version: 1
+type: Node

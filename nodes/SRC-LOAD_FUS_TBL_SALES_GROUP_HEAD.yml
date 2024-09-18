@@ -1,0 +1,115 @@
+fileVersion: 1
+id: fc89c47b-0040-4ec7-9eda-987deb4c6fb8
+name: LOAD_FUS_TBL_SALES_GROUP_HEAD
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc4b7c99-a3f7-44b1-812d-5b8e9b1733d3
+          stepCounter: fc89c47b-0040-4ec7-9eda-987deb4c6fb8
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_SALES_GROUP_HEAD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba1ccdd3-9fc7-43f9-84d6-8d55690c7749
+          stepCounter: fc89c47b-0040-4ec7-9eda-987deb4c6fb8
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7626e6e8-154f-453c-b8db-a296f6c063a1
+          stepCounter: fc89c47b-0040-4ec7-9eda-987deb4c6fb8
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52e376cf-ed78-472f-ac58-c4148d00f94c
+          stepCounter: fc89c47b-0040-4ec7-9eda-987deb4c6fb8
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a395a03-fdd8-45fc-aa35-13497b0ea245
+          stepCounter: fc89c47b-0040-4ec7-9eda-987deb4c6fb8
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_SALES_GROUP_HEAD') }}
+  name: LOAD_FUS_TBL_SALES_GROUP_HEAD
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_SALES_GROUP_HEAD
+  type: sourceInput
+  version: 1
+type: Node

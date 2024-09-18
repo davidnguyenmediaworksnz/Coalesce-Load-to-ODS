@@ -294,26 +294,8 @@
                 {% endif %}
                 "SRC"."{{ col.name }}" = "TGT"."{{ col.name }}"
             {% endfor %}
-            WHEN MATCHED
-            {% for col in source.columns if not (   col.isBusinessKey or
-                                                    col.isSurrogateKey or
-                                                    col.isSystemVersion or
-                                                    col.isSystemCurrentFlag or
-                                                    col.isSystemStartDate or
-                                                    col.isSystemEndDate or
-                                                    col.isSystemUpdateDate or
-                                                    col.isSystemCreateDate) %}
-                {% if loop.first %}
-                    AND (
-                {% else %}
-                    OR
-                {% endif %}
-                NVL( CAST("SRC"."{{ col.name }}" as STRING), '**NULL**') <> NVL( CAST("TGT"."{{ col.name }}" as STRING), '**NULL**')
-                {% if loop.last %}
-                    )
-                {% endif %}
-            {% endfor %}
-            THEN UPDATE SET
+            WHEN MATCHED THEN UPDATE         
+            SET
             {%- for col in source.columns if not (  col.isBusinessKey or
                                                     col.isSurrogateKey or
                                                     col.isSystemVersion or

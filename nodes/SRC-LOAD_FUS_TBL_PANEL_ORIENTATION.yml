@@ -1,0 +1,115 @@
+fileVersion: 1
+id: f9765d15-3653-4013-926c-53b3ff67eab4
+name: LOAD_FUS_TBL_PANEL_ORIENTATION
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3572c7ca-bb93-4657-89c2-586cff9240dd
+          stepCounter: f9765d15-3653-4013-926c-53b3ff67eab4
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_PANEL_ORIENTATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74c5be21-444c-43ef-81ac-698e5b993354
+          stepCounter: f9765d15-3653-4013-926c-53b3ff67eab4
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3bbda7a8-aff7-4ef1-b696-9c4987c59dcf
+          stepCounter: f9765d15-3653-4013-926c-53b3ff67eab4
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3cd53fb8-ce02-432d-a15f-91780df118df
+          stepCounter: f9765d15-3653-4013-926c-53b3ff67eab4
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8235a5e1-7cf2-4391-be66-f206f26e2c48
+          stepCounter: f9765d15-3653-4013-926c-53b3ff67eab4
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_PANEL_ORIENTATION') }}
+  name: LOAD_FUS_TBL_PANEL_ORIENTATION
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_PANEL_ORIENTATION
+  type: sourceInput
+  version: 1
+type: Node

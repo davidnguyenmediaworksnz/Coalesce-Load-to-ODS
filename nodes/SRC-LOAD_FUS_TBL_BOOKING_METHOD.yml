@@ -1,0 +1,134 @@
+fileVersion: 1
+id: ad51404a-03ff-4e27-ad83-0880d744157b
+name: LOAD_FUS_TBL_BOOKING_METHOD
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2498dcbf-4ad1-4617-af82-1f71bb3e4950
+          stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_BOOKING_METHOD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c2a8418-f9bc-4522-a208-22739eeedff3
+          stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c1dfeae-204c-4fa1-98d7-77917b95ddf6
+          stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a8ace58-f93b-4112-8814-2cccf6775f30
+          stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: MEM_AD_ORDER_TERMS_AND_CONDITIONS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0649e6af-da7b-4f0c-892d-b79e89183244
+          stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90ba7c1d-a650-4ab8-9d01-002ea6bbcf02
+          stepCounter: ad51404a-03ff-4e27-ad83-0880d744157b
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_BOOKING_METHOD') }}
+  name: LOAD_FUS_TBL_BOOKING_METHOD
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_BOOKING_METHOD
+  type: sourceInput
+  version: 1
+type: Node

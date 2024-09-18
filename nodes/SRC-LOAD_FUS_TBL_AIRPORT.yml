@@ -1,0 +1,134 @@
+fileVersion: 1
+id: e799d403-7ead-4b21-87ff-1f1519d218f8
+name: LOAD_FUS_TBL_AIRPORT
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5dc0aa59-dd7f-49ef-951d-f192ade699cb
+          stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_AIRPORT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75c92ecd-6ebd-4f2b-a3c9-55d12bbb3a42
+          stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91ca893e-5f48-4826-946a-d7b221ed75de
+          stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7d27923-6d12-4d1b-a3de-970409a91754
+          stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LNG_PASSENGER_COUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9269cdae-c65b-4b41-a3a7-b9b92af5dfeb
+          stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f21e976d-1e9d-4dc9-931e-a6a26d4b9fc6
+          stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_AIRPORT') }}
+  name: LOAD_FUS_TBL_AIRPORT
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_AIRPORT
+  type: sourceInput
+  version: 1
+type: Node

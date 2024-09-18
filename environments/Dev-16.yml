@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "16"
+mappingDefinitions:
+  ODS:
+    database: MW_DW_DEV
+    schema: COALESCE_DEV
+  SRC:
+    database: MW_DW_PROD
+    schema: LOAD
+name: Dev
+type: Environment

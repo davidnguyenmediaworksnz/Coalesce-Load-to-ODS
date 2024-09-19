@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 81011384-0ffd-4a7c-b062-61f53b249c8c
-name: ODS_LOAD_FUS_TBL_OPTION
+name: ODS_FUS_TBL_OPTION
 operation:
   config:
     postSQL: ""
@@ -22,6 +22,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_OPTION
         nullable: true
         sourceColumnReferences:
@@ -1165,20 +1166,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 8fd76119-bdf4-4638-a2a0-f387244093c9
-          stepCounter: 81011384-0ffd-4a7c-b062-61f53b249c8c
-        config: {}
-        dataType: NUMBER(38,0)
-        description: ""
-        name: BOO_DIGITAL_PRODUCT_EXCLUSIVITY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: cf9e1696-fce4-4e24-abc5-67f11087a3b3
-                stepCounter: 38060f62-3c9e-4c72-8ee4-cccc472412f9
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 867cd8ab-e53c-4b89-a894-30cfc262670f
           stepCounter: 81011384-0ffd-4a7c-b062-61f53b249c8c
         config: {}
@@ -1250,9 +1237,9 @@ operation:
             nodeName: LOAD_FUS_TBL_OPTION
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_OPTION') }} "LOAD_FUS_TBL_OPTION"
-        name: ODS_LOAD_FUS_TBL_OPTION
+        name: ODS_FUS_TBL_OPTION
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_OPTION
+  name: ODS_FUS_TBL_OPTION
   overrideSQL: false
   schema: ""
   sqlType: "10"

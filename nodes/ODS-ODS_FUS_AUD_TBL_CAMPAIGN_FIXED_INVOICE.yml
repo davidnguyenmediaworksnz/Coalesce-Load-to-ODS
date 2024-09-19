@@ -1,6 +1,6 @@
 fileVersion: 1
 id: d3ed53c9-8d63-4771-8f47-49c55ded21f1
-name: ODS_LOAD_FUS_AUD_TBL_CAMPAIGN_FIXED_INVOICE
+name: ODS_FUS_AUD_TBL_CAMPAIGN_FIXED_INVOICE
 operation:
   config:
     postSQL: ""
@@ -148,6 +148,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_CAMPAIGN_FIXED_INVOICE
         nullable: true
         sourceColumnReferences:
@@ -512,6 +513,7 @@ operation:
         config: {}
         dataType: TIMESTAMP_NTZ(9)
         description: ""
+        isBusinessKey: true
         name: DTT_AUDIT
         nullable: true
         sourceColumnReferences:
@@ -526,6 +528,7 @@ operation:
         config: {}
         dataType: VARCHAR(1)
         description: ""
+        isBusinessKey: true
         name: STR_AUDIT_ACTION
         nullable: true
         sourceColumnReferences:
@@ -606,9 +609,9 @@ operation:
             nodeName: LOAD_FUS_AUD_TBL_CAMPAIGN_FIXED_INVOICE
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_AUD_TBL_CAMPAIGN_FIXED_INVOICE') }} "LOAD_FUS_AUD_TBL_CAMPAIGN_FIXED_INVOICE"
-        name: ODS_LOAD_FUS_AUD_TBL_CAMPAIGN_FIXED_INVOICE
+        name: ODS_FUS_AUD_TBL_CAMPAIGN_FIXED_INVOICE
         noLinkRefs: []
-  name: ODS_LOAD_FUS_AUD_TBL_CAMPAIGN_FIXED_INVOICE
+  name: ODS_FUS_AUD_TBL_CAMPAIGN_FIXED_INVOICE
   overrideSQL: false
   schema: ""
   sqlType: "10"

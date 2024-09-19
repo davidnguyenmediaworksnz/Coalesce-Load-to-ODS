@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 34b284c5-c46b-46fc-be10-0282c4b1eb8c
-name: ODS_LOAD_FUS_TBL_ADDRESS
+name: ODS_FUS_TBL_ADDRESS
 operation:
   config:
     postSQL: ""
@@ -22,6 +22,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_ADDRESS
         nullable: true
         sourceColumnReferences:
@@ -256,9 +257,9 @@ operation:
             nodeName: LOAD_FUS_TBL_ADDRESS
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_ADDRESS') }} "LOAD_FUS_TBL_ADDRESS"
-        name: ODS_LOAD_FUS_TBL_ADDRESS
+        name: ODS_FUS_TBL_ADDRESS
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_ADDRESS
+  name: ODS_FUS_TBL_ADDRESS
   overrideSQL: false
   schema: ""
   sqlType: "10"

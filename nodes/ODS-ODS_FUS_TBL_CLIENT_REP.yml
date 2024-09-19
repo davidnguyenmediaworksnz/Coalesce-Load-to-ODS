@@ -1,6 +1,6 @@
 fileVersion: 1
 id: c198d99a-7e32-4722-8741-6c14160ae4ec
-name: ODS_LOAD_FUS_TBL_CLIENT_REP
+name: ODS_FUS_TBL_CLIENT_REP
 operation:
   config:
     postSQL: ""
@@ -22,6 +22,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_CLIENT_REP
         nullable: true
         sourceColumnReferences:
@@ -242,9 +243,9 @@ operation:
             nodeName: LOAD_FUS_TBL_CLIENT_REP
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_CLIENT_REP') }} "LOAD_FUS_TBL_CLIENT_REP"
-        name: ODS_LOAD_FUS_TBL_CLIENT_REP
+        name: ODS_FUS_TBL_CLIENT_REP
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_CLIENT_REP
+  name: ODS_FUS_TBL_CLIENT_REP
   overrideSQL: false
   schema: ""
   sqlType: "10"

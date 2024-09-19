@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 2b77a077-5aa6-41cd-9728-dadd4844a803
-name: ODS_LOAD_FUS_AUD_TBL_BOOKING
+name: ODS_FUS_AUD_TBL_BOOKING
 operation:
   config:
     postSQL: ""
@@ -190,6 +190,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_BOOKING
         nullable: true
         sourceColumnReferences:
@@ -512,6 +513,7 @@ operation:
         config: {}
         dataType: TIMESTAMP_NTZ(9)
         description: ""
+        isBusinessKey: true
         name: DTT_AUDIT
         nullable: true
         sourceColumnReferences:
@@ -526,6 +528,7 @@ operation:
         config: {}
         dataType: VARCHAR(1)
         description: ""
+        isBusinessKey: true
         name: STR_AUDIT_ACTION
         nullable: true
         sourceColumnReferences:
@@ -606,9 +609,9 @@ operation:
             nodeName: LOAD_FUS_AUD_TBL_BOOKING
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_AUD_TBL_BOOKING') }} "LOAD_FUS_AUD_TBL_BOOKING"
-        name: ODS_LOAD_FUS_AUD_TBL_BOOKING
+        name: ODS_FUS_AUD_TBL_BOOKING
         noLinkRefs: []
-  name: ODS_LOAD_FUS_AUD_TBL_BOOKING
+  name: ODS_FUS_AUD_TBL_BOOKING
   overrideSQL: false
   schema: ""
   sqlType: "10"

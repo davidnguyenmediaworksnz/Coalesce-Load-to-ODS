@@ -1,6 +1,6 @@
 fileVersion: 1
-id: 22959a32-df00-4d1b-ae1b-aa3975407cce
-name: ODS_LOAD_FUS_TBL_PANEL_DIRECTION
+id: b148e4b6-633a-4587-901b-5d41ccc09f91
+name: ODS_FUS_TBL_VEHICLE_DETAIL
 operation:
   config:
     postSQL: ""
@@ -17,22 +17,23 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: e12566dc-f2e9-45d8-99fe-f2634ca10f0a
-          stepCounter: 22959a32-df00-4d1b-ae1b-aa3975407cce
+          columnCounter: 3811b7b5-6aa2-4d81-91be-4039e3c71885
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: UID_PANEL_DIRECTION
+        isBusinessKey: true
+        name: UID_VEHICLE_DETAIL
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: f1ae0422-056b-410b-bb8b-3c7def3cb3c7
-                stepCounter: 9f24ff7e-6101-441a-994e-55668b337c48
+              - columnCounter: 3850a04d-e944-45ed-a027-cf6538fe3f22
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 94a92f2d-fa4b-47bf-9255-1ac85d3116d3
-          stepCounter: 22959a32-df00-4d1b-ae1b-aa3975407cce
+          columnCounter: c3e11f5e-c990-4f84-978f-53bb92b4b351
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
         config: {}
         dataType: VARCHAR(20)
         description: ""
@@ -40,13 +41,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: b8cf6b0d-73e3-43ac-9961-a18b8e45374f
-                stepCounter: 9f24ff7e-6101-441a-994e-55668b337c48
+              - columnCounter: 44c673c5-5464-45a0-9302-c0391bca1f53
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: be68c97b-c432-405c-a91a-fbe46fa310ef
-          stepCounter: 22959a32-df00-4d1b-ae1b-aa3975407cce
+          columnCounter: 7c035ec3-1f7c-42e4-b5d4-f09f87515302
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
         config: {}
         dataType: VARCHAR(100)
         description: ""
@@ -54,27 +55,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: b754fcad-d624-49e6-b715-7590b5be5f5b
-                stepCounter: 9f24ff7e-6101-441a-994e-55668b337c48
+              - columnCounter: bfbf076d-b5e0-4ad9-b415-74131df36865
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 36cb15e0-7a6d-4de3-bd89-b62515403511
-          stepCounter: 22959a32-df00-4d1b-ae1b-aa3975407cce
-        config: {}
-        dataType: NUMBER(21,6)
-        description: ""
-        name: DBL_ROTATION
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 91ec1bd6-e4c7-4014-b4fc-b1cec0676d4d
-                stepCounter: 9f24ff7e-6101-441a-994e-55668b337c48
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 227739e0-60a0-4eca-abd4-2b224aad05b4
-          stepCounter: 22959a32-df00-4d1b-ae1b-aa3975407cce
+          columnCounter: e724da7a-c88f-4a2b-8819-87b18359cd6e
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
         config: {}
         dataType: VARCHAR(64)
         description: Record source.
@@ -82,13 +69,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: ab3b6f71-7240-4c29-aa2d-46cf4e319c06
-                stepCounter: 9f24ff7e-6101-441a-994e-55668b337c48
+              - columnCounter: 344e9c47-509b-4030-8f67-30d215ddba4c
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 8a184874-9ca6-4941-bd0c-10f74c5f8d81
-          stepCounter: 22959a32-df00-4d1b-ae1b-aa3975407cce
+          columnCounter: 71d56ba8-f6b7-4074-ab68-976571f60cca
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
         config: {}
         dataType: TIMESTAMP_NTZ(9)
         description: Load date.
@@ -96,16 +83,16 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: fcf762e2-b557-465a-9535-5ec4b18809c4
-                stepCounter: 9f24ff7e-6101-441a-994e-55668b337c48
+              - columnCounter: a2bea412-2b07-47b6-b2ef-b644c22979cd
+                stepCounter: 9195675b-c62d-489a-b138-2fef7e1efe3a
             transform: ""
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: f0a79114-5bd4-4793-b235-a7530881ae97
-          stepCounter: 22959a32-df00-4d1b-ae1b-aa3975407cce
+          columnCounter: f7350871-bf53-43b2-ae52-24707ed8c29c
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -121,8 +108,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 66c59107-16fb-4ac9-9e68-e28675a1e330
-          stepCounter: 22959a32-df00-4d1b-ae1b-aa3975407cce
+          columnCounter: 04e3d4b5-5799-475d-83b2-60f3bfb0d2ca
+          stepCounter: b148e4b6-633a-4587-901b-5d41ccc09f91
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -141,12 +128,12 @@ operation:
           customSQL: ""
         dependencies:
           - locationName: SRC
-            nodeName: LOAD_FUS_TBL_PANEL_DIRECTION
+            nodeName: LOAD_FUS_TBL_VEHICLE_DETAIL
         join:
-          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_PANEL_DIRECTION') }} "LOAD_FUS_TBL_PANEL_DIRECTION"
-        name: ODS_LOAD_FUS_TBL_PANEL_DIRECTION
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_VEHICLE_DETAIL') }} "LOAD_FUS_TBL_VEHICLE_DETAIL"
+        name: ODS_FUS_TBL_VEHICLE_DETAIL
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_PANEL_DIRECTION
+  name: ODS_FUS_TBL_VEHICLE_DETAIL
   overrideSQL: false
   schema: ""
   sqlType: "10"

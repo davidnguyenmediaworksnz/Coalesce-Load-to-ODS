@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 85b0c282-7954-456d-9c42-75a9ebc727c2
-name: ODS_LOAD_FUS_TBL_OFFICE
+name: ODS_FUS_TBL_OFFICE
 operation:
   config:
     postSQL: ""
@@ -22,6 +22,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_OFFICE
         nullable: true
         sourceColumnReferences:
@@ -130,9 +131,9 @@ operation:
             nodeName: LOAD_FUS_TBL_OFFICE
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_OFFICE') }} "LOAD_FUS_TBL_OFFICE"
-        name: ODS_LOAD_FUS_TBL_OFFICE
+        name: ODS_FUS_TBL_OFFICE
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_OFFICE
+  name: ODS_FUS_TBL_OFFICE
   overrideSQL: false
   schema: ""
   sqlType: "10"

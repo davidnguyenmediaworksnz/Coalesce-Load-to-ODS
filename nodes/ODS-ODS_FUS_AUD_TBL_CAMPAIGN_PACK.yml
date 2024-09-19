@@ -1,6 +1,6 @@
 fileVersion: 1
 id: e92e6c85-173a-425b-82af-3ff3db3554bc
-name: ODS_LOAD_FUS_AUD_TBL_CAMPAIGN_PACK
+name: ODS_FUS_AUD_TBL_CAMPAIGN_PACK
 operation:
   config:
     postSQL: ""
@@ -162,6 +162,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_CAMPAIGN_PACK
         nullable: true
         sourceColumnReferences:
@@ -251,20 +252,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: ee4013b0-7a1f-417b-81ee-7303f6353b8e
-                stepCounter: 4c410dc1-040f-4e4f-b65b-c4ecc1f616fd
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: c320b226-cc48-450d-8ffc-2193025fcd3d
-          stepCounter: e92e6c85-173a-425b-82af-3ff3db3554bc
-        config: {}
-        dataType: VARCHAR(20)
-        description: ""
-        name: STR_CODE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 4cddab25-7b13-4965-be1b-3243e8d8031a
                 stepCounter: 4c410dc1-040f-4e4f-b65b-c4ecc1f616fd
             transform: ""
       - appliedColumnTests: {}
@@ -484,6 +471,7 @@ operation:
         config: {}
         dataType: TIMESTAMP_NTZ(9)
         description: ""
+        isBusinessKey: true
         name: DTT_AUDIT
         nullable: true
         sourceColumnReferences:
@@ -498,6 +486,7 @@ operation:
         config: {}
         dataType: VARCHAR(1)
         description: ""
+        isBusinessKey: true
         name: STR_AUDIT_ACTION
         nullable: true
         sourceColumnReferences:
@@ -578,9 +567,9 @@ operation:
             nodeName: LOAD_FUS_AUD_TBL_CAMPAIGN_PACK
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_AUD_TBL_CAMPAIGN_PACK') }} "LOAD_FUS_AUD_TBL_CAMPAIGN_PACK"
-        name: ODS_LOAD_FUS_AUD_TBL_CAMPAIGN_PACK
+        name: ODS_FUS_AUD_TBL_CAMPAIGN_PACK
         noLinkRefs: []
-  name: ODS_LOAD_FUS_AUD_TBL_CAMPAIGN_PACK
+  name: ODS_FUS_AUD_TBL_CAMPAIGN_PACK
   overrideSQL: false
   schema: ""
   sqlType: "10"

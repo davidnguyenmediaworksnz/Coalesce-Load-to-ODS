@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 142c0e30-69f6-460b-adf1-b5c05e56aef3
-name: ODS_LOAD_FUS_TBL_POSTING_CO
+name: ODS_FUS_TBL_POSTING_CO
 operation:
   config:
     postSQL: ""
@@ -36,6 +36,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_POSTING_CO
         nullable: true
         sourceColumnReferences:
@@ -284,9 +285,9 @@ operation:
             nodeName: LOAD_FUS_TBL_POSTING_CO
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_POSTING_CO') }} "LOAD_FUS_TBL_POSTING_CO"
-        name: ODS_LOAD_FUS_TBL_POSTING_CO
+        name: ODS_FUS_TBL_POSTING_CO
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_POSTING_CO
+  name: ODS_FUS_TBL_POSTING_CO
   overrideSQL: false
   schema: ""
   sqlType: "10"

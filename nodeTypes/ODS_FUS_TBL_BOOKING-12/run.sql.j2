@@ -233,8 +233,16 @@
                 AS "{{ col.name }}",
             {% endfor %}
             {{ source.join }}
-            LEFT JOIN {{ ref_no_link(node.location.name, node.name) }} "DIM" ON
+            LEFT JOIN {{ ref('SRC', 'LOAD_FUS_AUD_TBL_BOOKING') }} "LOAD_FUS_AUD_TBL_BOOKING" ON
             {% for col in source.columns if col.isBusinessKey -%}
+                {% if not loop.first %}
+                    AND
+                {% endif %}
+                    {{ get_source_transform(col) }} = "LOAD_FUS_AUD_TBL_BOOKING"."{{ col.name }}"
+            {% endfor %}
+            AND "LOAD_FUS_AUD_TBL_BOOKING"."STR_AUDIT_ACTION" = 'D'
+            LEFT JOIN {{ ref_no_link(node.location.name, node.name) }}  "DIM" ON 
+             {% for col in source.columns if col.isBusinessKey -%}
                 {% if not loop.first %}
                     AND
                 {% endif %}
@@ -263,14 +271,22 @@
                 AS "{{ col.name }}",
             {% endfor %}
             {{ source.join }}
-            INNER JOIN {{ ref_no_link(node.location.name, node.name) }} "DIM" ON
+            LEFT JOIN {{ ref('SRC', 'LOAD_FUS_AUD_TBL_BOOKING') }} "LOAD_FUS_AUD_TBL_BOOKING" ON
             {% for col in source.columns if col.isBusinessKey -%}
                 {% if not loop.first %}
                     AND
                 {% endif %}
-                {{ get_source_transform(col) }} = "DIM"."{{ col.name }}"
+                    {{ get_source_transform(col) }} = "LOAD_FUS_AUD_TBL_BOOKING"."{{ col.name }}"
+            AND "LOAD_FUS_AUD_TBL_BOOKING"."STR_AUDIT_ACTION" = 'D'         
             {% endfor %}
-            MINUS
+             INNER JOIN {{ ref_no_link(node.location.name, node.name) }} "DIM"  ON 
+             {% for col in source.columns if col.isBusinessKey -%}
+                {% if not loop.first %}
+                    AND
+                {% endif %}
+                    {{ get_source_transform(col) }} = "DIM"."{{ col.name }}"
+            {% endfor %}
+           MINUS
             /* EXCEPT FOR EXISTING ROWS TO NOT PROCESS UNCHANGED ROWS */
             SELECT
             {%- for col in source.columns if not col.isSurrogateKey %}

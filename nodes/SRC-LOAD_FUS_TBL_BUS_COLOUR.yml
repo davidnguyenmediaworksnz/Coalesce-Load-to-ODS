@@ -1,0 +1,115 @@
+fileVersion: 1
+id: c6b87ab1-a7b3-4252-93f5-10aaa4b27195
+name: LOAD_FUS_TBL_BUS_COLOUR
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50e020d5-bc4d-4523-9627-b40e954e9313
+          stepCounter: c6b87ab1-a7b3-4252-93f5-10aaa4b27195
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_BUS_COLOUR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41f31e7d-684e-423b-aa1e-2f319e3c7ddd
+          stepCounter: c6b87ab1-a7b3-4252-93f5-10aaa4b27195
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aabe8a73-bb89-465c-8422-4173ac9188bb
+          stepCounter: c6b87ab1-a7b3-4252-93f5-10aaa4b27195
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 72e940c4-9610-40bf-9cdd-ab7af77f42b4
+          stepCounter: c6b87ab1-a7b3-4252-93f5-10aaa4b27195
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70ab0dde-e65f-4d3f-945f-7c585db659ae
+          stepCounter: c6b87ab1-a7b3-4252-93f5-10aaa4b27195
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_BUS_COLOUR') }}
+  name: LOAD_FUS_TBL_BUS_COLOUR
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_BUS_COLOUR
+  type: sourceInput
+  version: 1
+type: Node

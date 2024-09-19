@@ -1,0 +1,191 @@
+fileVersion: 1
+id: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+name: LOAD_FUS_TBL_GRID_REFERENCE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02951b2e-2adb-4945-a55c-effd4afa322d
+          stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_GRID_REFERENCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f61d793-1ddb-46af-80a7-f482fc674707
+          stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LNG_GRIDN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb01feb1-c4ff-4c06-ab8b-0c5b900fe2c1
+          stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LNG_GRIDE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9818f02-c492-4578-b2c1-ccd19773d0d6
+          stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_LATI
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ce01fe3-1cb9-4d43-a28a-56e8bfc73c6e
+          stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_LONGI
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b60d73e3-0176-4438-b7b0-df11728e26fc
+          stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INT_MAPPING_ACCURACY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b082c6ef-2659-49ba-921f-26484b8ae0c3
+          stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: GEO_LOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c71be9c-5485-4663-845c-5fe6c66ab2e0
+          stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 686077d0-ec16-4ab7-abb8-f7cf1c13bd0d
+          stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_GRID_REFERENCE') }}
+  name: LOAD_FUS_TBL_GRID_REFERENCE
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_GRID_REFERENCE
+  type: sourceInput
+  version: 1
+type: Node

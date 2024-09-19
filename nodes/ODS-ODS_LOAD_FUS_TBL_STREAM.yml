@@ -1,0 +1,183 @@
+fileVersion: 1
+id: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+name: ODS_LOAD_FUS_TBL_STREAM
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3599376b-1da8-44d7-bd48-54c4889ff205
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 157ed94c-bb5b-4d16-9cd6-60620e4198df
+                stepCounter: 2d1d62a7-b285-46a1-a777-62c4fb4506dd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40c8c7b3-6d30-46ce-93d7-723c00d8406f
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_STREAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7440290d-bd9b-4647-9b8c-299a3b57b688
+                stepCounter: 2d1d62a7-b285-46a1-a777-62c4fb4506dd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a036fa9-948b-46e4-9991-fafa74a21b04
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 873b2709-3edc-4265-9beb-b9322d92632f
+                stepCounter: 2d1d62a7-b285-46a1-a777-62c4fb4506dd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32212346-e8b2-460b-b856-4712bdc50922
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INT_DAYS_BEFORE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb4313fe-7758-4c0f-9988-8f738646e19c
+                stepCounter: 2d1d62a7-b285-46a1-a777-62c4fb4506dd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ef391b9-ec53-4e77-9ff8-14b35badfe7b
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INT_DAYS_AFTER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0404560d-5ec9-46da-b287-0633a5cbe14f
+                stepCounter: 2d1d62a7-b285-46a1-a777-62c4fb4506dd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87fec413-7d1b-4059-ab8b-d722026b8ef9
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INT_DAY_OF_WEEK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 512903b2-975d-4617-9578-c4210daaed5a
+                stepCounter: 2d1d62a7-b285-46a1-a777-62c4fb4506dd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20dd9000-ed03-4416-8b57-02a97c32c8b9
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0991cc6d-bce2-4266-964f-8efb06ca8eba
+                stepCounter: 2d1d62a7-b285-46a1-a777-62c4fb4506dd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8fd2039e-704b-4ee2-b41b-39930eab0c14
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 067d4982-5dff-4540-b057-b1ac416f94af
+                stepCounter: 2d1d62a7-b285-46a1-a777-62c4fb4506dd
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 909c9d8e-b7f7-48cc-bbd1-c862ed7a7c4e
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12f9e0a7-584e-4276-b511-c19d2e5f355f
+          stepCounter: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_STREAM
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_STREAM') }} "LOAD_FUS_TBL_STREAM"
+        name: ODS_LOAD_FUS_TBL_STREAM
+        noLinkRefs: []
+  name: ODS_LOAD_FUS_TBL_STREAM
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

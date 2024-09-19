@@ -1,0 +1,210 @@
+fileVersion: 1
+id: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+name: LOAD_FUS_TBL_AMOUNT_BOOKING
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 82e463d6-e43f-41e3-a210-b6217b934300
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_AMOUNT_BOOKING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f69b3f9d-3047-4b78-8c9e-78968ec3cbe5
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_BOOKING_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dccb8fd-506c-4f1f-92bc-8c3501ab47ac
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_POSTING_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f88d8d6-9131-4d74-af10-bcd8f017b0ce
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_PRODUCTION_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6854925-a1b5-4ae2-b657-623e84020798
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_USER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91d90bca-dbd9-49b5-85d6-13f5b50708db
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_BOOKING_RATE_CARD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc75f1c4-4481-4b35-806b-29a8afd7d678
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_PRODUCTION_RATE_CARD_SELLING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 274bf801-0dd2-4b68-a9f5-996f8bbcfabb
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_PRODUCTION__SETUP_RATE_CARD_SELLING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e205cf4-ec85-4b2f-a966-a4fe7fcb90ad
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6048478-da62-4091-94e9-32890e4b7b12
+          stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_AMOUNT_BOOKING') }}
+  name: LOAD_FUS_TBL_AMOUNT_BOOKING
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_AMOUNT_BOOKING
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,282 @@
+fileVersion: 1
+id: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+name: ODS_FUS_TBL_CONTRACTOR
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4484cbb6-2b78-4f35-85a0-ab4e1b8b7039
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: UID_CONTRACTOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9246997a-ceda-4962-9f9e-1289e76818bd
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3789ea3b-6f50-477b-b5cc-4548458ff625
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f73e7883-e2b5-4ab8-9355-d4ec6adb96ea
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ab775ec-522e-47f9-b0cc-f6961e0f0c4e
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a3472f56-9303-4666-b58d-a32dc7f58c6f
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc0b6e79-c1e8-4201-ba70-60736a202ed6
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7810f49d-a16f-415d-8541-dfeacdcc5ddd
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2214571-546b-498b-bca8-6807305f0e70
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LNG_INVOICE_NO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 293d941d-0a33-4afe-a0c8-ffa29af4b4ad
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60b53180-657d-466d-97e4-1730e95c1062
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LNG_CREDIT_NO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59ee6bad-13a0-45b3-9c1b-5ea811d981b0
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59c1ff9e-2b9c-48e7-9e4a-96e28890f9b9
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: VARCHAR(60)
+        description: ""
+        name: STR_VAT_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: df5ca3c5-22dd-4a3d-9d9b-75b00f6ef3e5
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7968ce7-2006-4d68-a008-5e88e2e2ca8a
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_R_PRICING__APPROVAL_USERGROUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3906f994-14c1-4b1e-ac85-0cdc82da163f
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 041fd11c-679a-4c5c-8209-d436b1f255c6
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: VARCHAR(500)
+        description: ""
+        name: STR_SALES_POWERPOINT_TEMPLATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0ba49dcf-ad48-4af7-ae45-f65eecef2b01
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23b9d519-d69a-406c-ba0a-1a84a6ab0da8
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: VARCHAR(500)
+        description: ""
+        name: STR_OPERATION_POWERPOINT_TEMPLATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fc2f5e3d-9cce-477c-a1a7-46a0b4a85b1b
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a755a043-f85e-4e8f-8dd8-13ec05729bc2
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_BANK_ACCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77224fb6-3705-4a24-a5d4-6390864f60d1
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b3350f3-048b-428c-91e6-093d1397fbea
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_BUSINESS_UNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a4f641e7-8948-4c62-8d98-0752f320e67e
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9edae0c8-3d71-42b2-9355-89f136d3a6da
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_DEFAULT_INVOICE_LAYOUT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 62860798-f576-4e4a-826e-7a78b0de63f5
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6393591-6538-4ef6-832a-f1935d801f7a
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 821ef17d-7109-465d-890a-047f197db3aa
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73d33464-5994-4f93-a242-9a21aa398df2
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6fae6fa2-4d7d-4780-a69a-eb9cdb262dcd
+                stepCounter: 9a4a786a-5978-4a0e-996b-5f17afb8a99a
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0aa5d6db-f5b4-4f16-9dd6-9f4167d54f83
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0bb06ea0-99a7-4726-81e9-6a21eb47e614
+          stepCounter: d7dfb26b-a078-4fb0-9f1f-06dfaac9418b
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_CONTRACTOR
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_CONTRACTOR') }} "LOAD_FUS_TBL_CONTRACTOR"
+        name: ODS_FUS_TBL_CONTRACTOR
+        noLinkRefs: []
+  name: ODS_FUS_TBL_CONTRACTOR
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

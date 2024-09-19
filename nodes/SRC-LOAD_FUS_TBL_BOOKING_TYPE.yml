@@ -1,0 +1,210 @@
+fileVersion: 1
+id: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+name: LOAD_FUS_TBL_BOOKING_TYPE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4026bdd2-7da8-4d19-8a1a-7f35713d83cc
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_BOOKING_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ebeb1bb0-8dab-4086-a31b-db6b44016c5a
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a1fb0b4-60f9-4ad7-ad72-0307d5966cb1
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa3cf34d-b0be-4fd4-bfe3-959773396f1f
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_BOOK_ZERO_PRICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 486e3ee8-fb5e-45cb-a8b9-dd01c4a51a81
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_PREEMPTIBLE_BOOKING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: da0938b4-03d5-471a-8113-6cdfd3bc86d8
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_MOVEABLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa5b495f-fd81-4682-acd9-543048516593
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BOO_VSA_EXPORT_AS_AVAIL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ba98c9a-fab6-4d79-941e-f5a0847909bc
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_R_CORRESPONDING_DIGITAL_BOOKING_STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f13c648-b2ff-48d3-9738-d2b67dcec8f8
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86530a71-5a7d-4ce6-aee5-f01345c4f602
+          stepCounter: 2a1d4fe4-eb37-40c3-9685-276d7f7f6b09
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_BOOKING_TYPE') }}
+  name: LOAD_FUS_TBL_BOOKING_TYPE
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_BOOKING_TYPE
+  type: sourceInput
+  version: 1
+type: Node

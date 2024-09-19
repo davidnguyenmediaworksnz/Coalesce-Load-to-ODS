@@ -1,0 +1,8 @@
+excludeSelector: ""
+fileVersion: 1
+id: "2"
+includeSelector: |
+  {name: *}
+name: Update all ODS tables
+type: Job
+version: 2

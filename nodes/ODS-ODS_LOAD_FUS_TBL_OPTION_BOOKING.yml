@@ -1,0 +1,393 @@
+fileVersion: 1
+id: 18b211ed-009b-4928-bb62-8a3412e591a7
+name: ODS_LOAD_FUS_TBL_OPTION_BOOKING
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 123a1e24-cf53-4899-a34e-f3686d406730
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_OPTION_BOOKING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 932de4e9-1e61-4290-8fff-32528054612c
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: daa5acf7-201c-4b56-80e7-5c731c0c7239
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PANEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b6a40fd0-1335-478f-ac5a-a75b696110cc
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66011eb8-979c-4716-ab07-c12603d58c89
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_OPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b3f281b4-3db7-41ec-9410-017c94e86473
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a29cc4d9-6b7f-456d-a87a-e9f9b453df79
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DTE_FROM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d3ab4b8a-53fe-4213-aa13-f4b58855f2f5
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3baa48d7-3f4f-42f7-8427-d5c92e773304
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DTE_TO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 960ae69a-d153-4d95-aa72-6c3a351e3c4f
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ecdf5a3-eb6e-4614-9bff-43dc8b52a917
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INT_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e6c33bf6-47fe-417a-af66-b4ded19a9d07
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba7464f2-feb4-4508-8098-235942459865
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_REPORT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee54d32d-444b-48ab-b891-2d0dcd94d10d
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a2cbaa41-da84-4901-9bcd-a00209a69e68
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BOO_PHOTO_REQUIRED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 029052dd-cd90-4ef6-b584-41610981ffb5
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d86adc59-41ef-4a68-bf6b-7ecd988a335a
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_SALES_REP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 088e70aa-e302-487d-8806-9c7b918155cf
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aceb9968-1554-40d1-aa58-eb6f86343500
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_POSTER_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a28980b-6744-4bcc-afcf-e6ee03f28dad
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f26e903c-5b17-4792-a7a8-e14f40b56b56
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_AMOUNT_BOOKING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f5c5b813-66ac-4e21-a23f-51278ecf87ee
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03f31c5a-8faa-4c47-8dfb-19fae2b4596d
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BOO_APPLY_PRODUCTION_CHARGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c7c457d-5493-42fa-a397-c7294a5185f5
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7370ba9f-3ef9-4aed-b3da-f3935884280d
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BOO_APPLY_POSTING_CHARGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa1beb2a-ea09-45ba-b1b1-c48e8be2e6c8
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae2a5c75-e278-478f-bcdf-8e40866f4f8a
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_BOOKING_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15cbe7d0-b2db-45b5-b709-9372db495840
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5dcfd00-a976-4f20-9c42-eac50a2433ab
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(21,6)
+        description: ""
+        name: DBL_DIS_PC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5e678574-815b-43cb-8c4c-6410e520cc16
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7046d980-c06d-41d2-801e-a70b1de1a4e5
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: CUR_PRODUCTION_EXTRA_CHARGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1ea4361c-d677-4313-88b9-a9fc6e27417e
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19b1d8f2-2d8e-438a-b276-b549bcc4c9d6
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MEM_PRODUCTION_NOTES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e1c5d82c-de19-4de8-9c44-fb3ecdbdf25b
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 345829f1-528e-4220-9c22-528b8b915147
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PRODUCTION_GROUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ef4a4405-7c2a-4797-a0b2-ed096214f4ce
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a29078d1-1dcf-4eb2-9525-1f382af29f54
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INT_APPROVAL_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4304efaf-8b84-4518-b45c-d20e1ff48586
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac89bd0e-74cc-4642-bd4d-4307399b934b
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_R_ORIGINATING__AVAILABILITY_PSG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3083621c-cf62-495f-b3d9-1abb8d719e16
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a671aafe-dcfa-4ba7-8063-cd6f29cca204
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_PLAN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3fd51708-8cbc-41a4-9a49-95aa37eaf5bd
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7dfc36af-abe0-40c1-8519-db175f8c7018
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5a43fe5c-a557-4555-b29c-fcfbbfb36591
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ffc5b3a-80f3-4a4b-9b0a-c16eb05b7bce
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15d967ed-a587-436f-9dd3-ded8212342a9
+                stepCounter: 3012aa1d-18e0-4223-9145-cd41385a5c02
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc95de86-ccc5-49f7-b704-2d9538c049d6
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50935be8-d070-4854-8bf4-8805bc7bad70
+          stepCounter: 18b211ed-009b-4928-bb62-8a3412e591a7
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_OPTION_BOOKING
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_OPTION_BOOKING') }} "LOAD_FUS_TBL_OPTION_BOOKING"
+        name: ODS_LOAD_FUS_TBL_OPTION_BOOKING
+        noLinkRefs: []
+  name: ODS_LOAD_FUS_TBL_OPTION_BOOKING
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

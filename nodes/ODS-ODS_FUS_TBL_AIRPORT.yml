@@ -1,0 +1,156 @@
+fileVersion: 1
+id: 345e8903-46f9-4715-a420-94b670a2f9c7
+name: ODS_FUS_TBL_AIRPORT
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a9ae35f-a8e9-459e-a23e-19c519de4779
+          stepCounter: 345e8903-46f9-4715-a420-94b670a2f9c7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: UID_AIRPORT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5dc0aa59-dd7f-49ef-951d-f192ade699cb
+                stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a1983a0-705a-4ce9-8a2f-844d77696db3
+          stepCounter: 345e8903-46f9-4715-a420-94b670a2f9c7
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 75c92ecd-6ebd-4f2b-a3c9-55d12bbb3a42
+                stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: be41dae8-b9e8-4227-9a7e-06637d0bdcf3
+          stepCounter: 345e8903-46f9-4715-a420-94b670a2f9c7
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: STR_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 91ca893e-5f48-4826-946a-d7b221ed75de
+                stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92ae7c98-8eb7-46f3-8087-ee5fd1f577d7
+          stepCounter: 345e8903-46f9-4715-a420-94b670a2f9c7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LNG_PASSENGER_COUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f7d27923-6d12-4d1b-a3de-970409a91754
+                stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79a8fe27-ca40-4473-93e2-090832728ace
+          stepCounter: 345e8903-46f9-4715-a420-94b670a2f9c7
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9269cdae-c65b-4b41-a3a7-b9b92af5dfeb
+                stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23cf1bcd-3a20-449b-8309-84d6772de982
+          stepCounter: 345e8903-46f9-4715-a420-94b670a2f9c7
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f21e976d-1e9d-4dc9-931e-a6a26d4b9fc6
+                stepCounter: e799d403-7ead-4b21-87ff-1f1519d218f8
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0007fbf2-cd32-4a0e-8ac0-80bce9b5a588
+          stepCounter: 345e8903-46f9-4715-a420-94b670a2f9c7
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c5941bb-a19f-4acb-b32e-58d521dc0224
+          stepCounter: 345e8903-46f9-4715-a420-94b670a2f9c7
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_AIRPORT
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_AIRPORT') }} "LOAD_FUS_TBL_AIRPORT"
+        name: ODS_FUS_TBL_AIRPORT
+        noLinkRefs: []
+  name: ODS_FUS_TBL_AIRPORT
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

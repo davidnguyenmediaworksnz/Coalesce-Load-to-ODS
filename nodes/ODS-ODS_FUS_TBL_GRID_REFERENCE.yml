@@ -1,0 +1,198 @@
+fileVersion: 1
+id: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+name: ODS_FUS_TBL_GRID_REFERENCE
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42e8d7e6-aa24-4ba5-bdb9-96441e1e019b
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: UID_GRID_REFERENCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 02951b2e-2adb-4945-a55c-effd4afa322d
+                stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe301b20-4d76-4513-b7cd-66ea878b97d9
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LNG_GRIDN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6f61d793-1ddb-46af-80a7-f482fc674707
+                stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51138de7-5693-4580-b8bd-70baa2630123
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LNG_GRIDE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb01feb1-c4ff-4c06-ab8b-0c5b900fe2c1
+                stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9bdabf53-3ec5-4b9a-a341-60f8d8790e61
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_LATI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9818f02-c492-4578-b2c1-ccd19773d0d6
+                stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b52d668-99e7-455a-9124-3ba08591c5b8
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STR_LONGI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ce01fe3-1cb9-4d43-a28a-56e8bfc73c6e
+                stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7fd8ddf-f751-4016-96ea-ebaaf5ce2c15
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INT_MAPPING_ACCURACY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b60d73e3-0176-4438-b7b0-df11728e26fc
+                stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d063be3-8966-4b2e-994f-24e981b3c658
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: GEO_LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b082c6ef-2659-49ba-921f-26484b8ae0c3
+                stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 808e9908-57fe-43b8-862d-942b1c3315a5
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c71be9c-5485-4663-845c-5fe6c66ab2e0
+                stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00697450-9b31-4c73-b7e9-804a46ddbba4
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 686077d0-ec16-4ab7-abb8-f7cf1c13bd0d
+                stepCounter: 03d35088-1da7-48f0-9d61-c7d2b428e2b2
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20984cfb-65ed-4e74-88ba-44d5cceaefb1
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 401bd28d-d3df-4e0e-b5f4-4f6fa13f72be
+          stepCounter: 82dfcabc-fdac-42f7-aa0b-d96e3b92b1b8
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_GRID_REFERENCE
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_GRID_REFERENCE') }} "LOAD_FUS_TBL_GRID_REFERENCE"
+        name: ODS_FUS_TBL_GRID_REFERENCE
+        noLinkRefs: []
+  name: ODS_FUS_TBL_GRID_REFERENCE
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

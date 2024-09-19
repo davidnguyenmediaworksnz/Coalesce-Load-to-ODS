@@ -1,0 +1,134 @@
+fileVersion: 1
+id: b3e42b54-c2c4-4370-8753-0f5a33909ed4
+name: LOAD_FUS_TBL_ILLUMINATION_TYPE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13c1ea69-62af-4feb-81d3-b0ee88d88f44
+          stepCounter: b3e42b54-c2c4-4370-8753-0f5a33909ed4
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_ILLUMINATION_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a5ad4e8-bd45-4263-8768-99ef40a9b4c9
+          stepCounter: b3e42b54-c2c4-4370-8753-0f5a33909ed4
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: STR_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41a39454-8ced-44d7-ba98-b02e8f0714dc
+          stepCounter: b3e42b54-c2c4-4370-8753-0f5a33909ed4
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b510e839-039d-4500-b65f-d2e2aee59167
+          stepCounter: b3e42b54-c2c4-4370-8753-0f5a33909ed4
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_ROUTE_ILLUMINATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c68d3184-eb86-461c-8283-834d36ca377d
+          stepCounter: b3e42b54-c2c4-4370-8753-0f5a33909ed4
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a6aae7e-3b95-450f-8ccd-8f2c6cd8a295
+          stepCounter: b3e42b54-c2c4-4370-8753-0f5a33909ed4
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_ILLUMINATION_TYPE') }}
+  name: LOAD_FUS_TBL_ILLUMINATION_TYPE
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_ILLUMINATION_TYPE
+  type: sourceInput
+  version: 1
+type: Node

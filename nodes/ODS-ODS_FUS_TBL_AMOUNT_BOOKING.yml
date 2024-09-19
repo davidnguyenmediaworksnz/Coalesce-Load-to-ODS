@@ -1,0 +1,212 @@
+fileVersion: 1
+id: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+name: ODS_FUS_TBL_AMOUNT_BOOKING
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f75d10e-688a-4bd0-8737-749a73f6cab4
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: UID_AMOUNT_BOOKING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 82e463d6-e43f-41e3-a210-b6217b934300
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0901ec4e-ade2-4967-a527-347554de4db6
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_R_BOOKING_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f69b3f9d-3047-4b78-8c9e-78968ec3cbe5
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1e3ef3d-1688-4c79-b387-a76cb0a1be88
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_R_POSTING_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6dccb8fd-506c-4f1f-92bc-8c3501ab47ac
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a570f6b-51be-4f2a-98dc-81b93249fa0e
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_R_PRODUCTION_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f88d8d6-9131-4d74-af10-bcd8f017b0ce
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6bcc37b-5865-4899-8244-e369ae5d3e1c
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_USER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6854925-a1b5-4ae2-b657-623e84020798
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffb32d28-b153-4d1a-bee3-ffe5fd4c2912
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_BOOKING_RATE_CARD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 91d90bca-dbd9-49b5-85d6-13f5b50708db
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ae64172-4b6a-4382-9d26-f02fe5f07d2f
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_R_PRODUCTION_RATE_CARD_SELLING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fc75f1c4-4481-4b35-806b-29a8afd7d678
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25d67207-6536-4238-ab3a-0459135dfbab
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UID_R_PRODUCTION__SETUP_RATE_CARD_SELLING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 274bf801-0dd2-4b68-a9f5-996f8bbcfabb
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16621369-1287-4a4b-8755-d4891f61a121
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e205cf4-ec85-4b2f-a966-a4fe7fcb90ad
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58796bbd-1324-41dc-9167-0d2254fc524d
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b6048478-da62-4091-94e9-32890e4b7b12
+                stepCounter: c72697ca-0bd7-4609-aba5-a56ddfbeb3ec
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f33d980f-8869-4a01-b6d2-11b08e066359
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a90103f0-fe22-47ff-8e6b-68244fcadea5
+          stepCounter: 961ea8d4-e429-4e4c-bea0-d6cc46f4e3da
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_FUS_TBL_AMOUNT_BOOKING
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_AMOUNT_BOOKING') }} "LOAD_FUS_TBL_AMOUNT_BOOKING"
+        name: ODS_FUS_TBL_AMOUNT_BOOKING
+        noLinkRefs: []
+  name: ODS_FUS_TBL_AMOUNT_BOOKING
+  overrideSQL: false
+  schema: ""
+  sqlType: "10"
+  type: sql
+  version: 1
+type: Node

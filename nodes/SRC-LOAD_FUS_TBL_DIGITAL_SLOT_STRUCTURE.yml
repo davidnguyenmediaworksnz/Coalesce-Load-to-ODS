@@ -1,0 +1,96 @@
+fileVersion: 1
+id: b0c2aff1-54ca-4453-bd5e-604e658a19c1
+name: LOAD_FUS_TBL_DIGITAL_SLOT_STRUCTURE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ea65a20-431e-4374-af04-44a20a1b5a3d
+          stepCounter: b0c2aff1-54ca-4453-bd5e-604e658a19c1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UID_DIGITAL_SLOT_STRUCTURE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56329e3f-9845-4d90-9a30-6030da4986b4
+          stepCounter: b0c2aff1-54ca-4453-bd5e-604e658a19c1
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: STR_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7f50355-0f63-403b-a9e0-063790a5e3d0
+          stepCounter: b0c2aff1-54ca-4453-bd5e-604e658a19c1
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db961b7c-a5d2-4978-af8e-622b4eeeff06
+          stepCounter: b0c2aff1-54ca-4453-bd5e-604e658a19c1
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_DIGITAL_SLOT_STRUCTURE') }}
+  name: LOAD_FUS_TBL_DIGITAL_SLOT_STRUCTURE
+  schema: ""
+  sqlType: Source
+  table: LOAD_FUS_TBL_DIGITAL_SLOT_STRUCTURE
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,6 +1,6 @@
 fileVersion: 1
 id: ca803e4e-09c2-44b2-8d4c-274d4fc6fcef
-name: ODS_LOAD_FUS_TBL_WORK_ORDER
+name: ODS_FUS_TBL_WORK_ORDER
 operation:
   config:
     postSQL: ""
@@ -22,6 +22,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_WORK_ORDER
         nullable: true
         sourceColumnReferences:
@@ -410,9 +411,9 @@ operation:
             nodeName: LOAD_FUS_TBL_WORK_ORDER
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_WORK_ORDER') }} "LOAD_FUS_TBL_WORK_ORDER"
-        name: ODS_LOAD_FUS_TBL_WORK_ORDER
+        name: ODS_FUS_TBL_WORK_ORDER
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_WORK_ORDER
+  name: ODS_FUS_TBL_WORK_ORDER
   overrideSQL: false
   schema: ""
   sqlType: "10"

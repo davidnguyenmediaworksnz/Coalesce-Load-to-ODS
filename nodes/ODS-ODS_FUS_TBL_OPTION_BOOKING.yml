@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 18b211ed-009b-4928-bb62-8a3412e591a7
-name: ODS_LOAD_FUS_TBL_OPTION_BOOKING
+name: ODS_FUS_TBL_OPTION_BOOKING
 operation:
   config:
     postSQL: ""
@@ -22,6 +22,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_OPTION_BOOKING
         nullable: true
         sourceColumnReferences:
@@ -382,9 +383,9 @@ operation:
             nodeName: LOAD_FUS_TBL_OPTION_BOOKING
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_OPTION_BOOKING') }} "LOAD_FUS_TBL_OPTION_BOOKING"
-        name: ODS_LOAD_FUS_TBL_OPTION_BOOKING
+        name: ODS_FUS_TBL_OPTION_BOOKING
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_OPTION_BOOKING
+  name: ODS_FUS_TBL_OPTION_BOOKING
   overrideSQL: false
   schema: ""
   sqlType: "10"

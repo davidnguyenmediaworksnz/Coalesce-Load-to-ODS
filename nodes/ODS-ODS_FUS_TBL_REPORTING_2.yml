@@ -1,6 +1,6 @@
 fileVersion: 1
-id: e6da50eb-f88c-4709-b516-18e8a711bba4
-name: ODS_LOAD_FUS_TBL_REPORTING_1
+id: 89a065a1-bb09-4afe-8522-9a3dc78d176e
+name: ODS_FUS_TBL_REPORTING_2
 operation:
   config:
     postSQL: ""
@@ -17,22 +17,23 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: d316a964-c947-45b3-bf94-5b3320e8cc12
-          stepCounter: e6da50eb-f88c-4709-b516-18e8a711bba4
+          columnCounter: 8707746a-b9ec-4639-b9a4-69a4784f748e
+          stepCounter: 89a065a1-bb09-4afe-8522-9a3dc78d176e
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: UID_REPORTING_1
+        isBusinessKey: true
+        name: UID_REPORTING_2
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 95413b56-edae-4cf8-8cd3-2d1b3c53aa97
-                stepCounter: 2419a60c-b787-4c6f-a600-5edcb3314b4f
+              - columnCounter: dc34a4a2-efb1-49ab-a488-be473b4b21a3
+                stepCounter: 22687f44-25f7-463a-b7e2-d68bcf1614c7
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 7735fc1c-3869-4aa7-8a61-6a19cfe3350d
-          stepCounter: e6da50eb-f88c-4709-b516-18e8a711bba4
+          columnCounter: 08ba1a76-2e07-4e47-96f6-0c0a64578a82
+          stepCounter: 89a065a1-bb09-4afe-8522-9a3dc78d176e
         config: {}
         dataType: VARCHAR(20)
         description: ""
@@ -40,13 +41,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 91c1fa1b-71d1-4623-8086-19eb86bf5412
-                stepCounter: 2419a60c-b787-4c6f-a600-5edcb3314b4f
+              - columnCounter: d227ae01-c02b-4113-89c8-d408039c15df
+                stepCounter: 22687f44-25f7-463a-b7e2-d68bcf1614c7
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: cf31fdbf-d2e6-4385-b96c-9b2246a8fe35
-          stepCounter: e6da50eb-f88c-4709-b516-18e8a711bba4
+          columnCounter: 516e51d8-4bf8-41a5-a033-fd6616f8e3ae
+          stepCounter: 89a065a1-bb09-4afe-8522-9a3dc78d176e
         config: {}
         dataType: VARCHAR(100)
         description: ""
@@ -54,13 +55,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: e6b27dbf-e333-4a56-8148-3f5ae6bd2776
-                stepCounter: 2419a60c-b787-4c6f-a600-5edcb3314b4f
+              - columnCounter: 54ce0313-15c0-472b-9d0b-a24cfb721115
+                stepCounter: 22687f44-25f7-463a-b7e2-d68bcf1614c7
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3be291cc-a0c2-493f-b1af-bbc4a4cc5c6b
-          stepCounter: e6da50eb-f88c-4709-b516-18e8a711bba4
+          columnCounter: da7a8a8d-ce6b-4dfe-8905-3d500fc52673
+          stepCounter: 89a065a1-bb09-4afe-8522-9a3dc78d176e
         config: {}
         dataType: VARCHAR(64)
         description: Record source.
@@ -68,13 +69,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 4aeababc-132b-461a-b231-2eb25679e71d
-                stepCounter: 2419a60c-b787-4c6f-a600-5edcb3314b4f
+              - columnCounter: 89c66611-cacd-4172-a774-66cb38e4d333
+                stepCounter: 22687f44-25f7-463a-b7e2-d68bcf1614c7
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c2376aff-d6f0-4157-a5dd-0f271bf807d0
-          stepCounter: e6da50eb-f88c-4709-b516-18e8a711bba4
+          columnCounter: 43d614d3-52bf-4b83-9a26-7403f48e9a26
+          stepCounter: 89a065a1-bb09-4afe-8522-9a3dc78d176e
         config: {}
         dataType: TIMESTAMP_NTZ(9)
         description: Load date.
@@ -82,16 +83,16 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 477a3979-d4c0-4e18-9983-f1a475826a83
-                stepCounter: 2419a60c-b787-4c6f-a600-5edcb3314b4f
+              - columnCounter: 91a9cd3b-04b4-4d39-96e9-265bf6c4415b
+                stepCounter: 22687f44-25f7-463a-b7e2-d68bcf1614c7
             transform: ""
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b98a58bb-1199-409f-a55d-1a3069c8ebe2
-          stepCounter: e6da50eb-f88c-4709-b516-18e8a711bba4
+          columnCounter: aae7b1b9-03f6-45c4-9c5b-eb2e189f371e
+          stepCounter: 89a065a1-bb09-4afe-8522-9a3dc78d176e
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -107,8 +108,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 6ee4e532-9eb2-4dd2-b5ec-91fddfe10f18
-          stepCounter: e6da50eb-f88c-4709-b516-18e8a711bba4
+          columnCounter: 67f1b358-3424-4ce3-a4fb-196a0566a4d9
+          stepCounter: 89a065a1-bb09-4afe-8522-9a3dc78d176e
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -127,12 +128,12 @@ operation:
           customSQL: ""
         dependencies:
           - locationName: SRC
-            nodeName: LOAD_FUS_TBL_REPORTING_1
+            nodeName: LOAD_FUS_TBL_REPORTING_2
         join:
-          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_REPORTING_1') }} "LOAD_FUS_TBL_REPORTING_1"
-        name: ODS_LOAD_FUS_TBL_REPORTING_1
+          joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_REPORTING_2') }} "LOAD_FUS_TBL_REPORTING_2"
+        name: ODS_FUS_TBL_REPORTING_2
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_REPORTING_1
+  name: ODS_FUS_TBL_REPORTING_2
   overrideSQL: false
   schema: ""
   sqlType: "10"

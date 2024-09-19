@@ -1,6 +1,6 @@
 fileVersion: 1
 id: dd31445f-9556-4ded-be17-5d9cb79127fe
-name: ODS_LOAD_FUS_TBL_PANEL
+name: ODS_FUS_TBL_PANEL
 operation:
   config:
     postSQL: ""
@@ -22,6 +22,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_PANEL
         nullable: true
         sourceColumnReferences:
@@ -1544,9 +1545,9 @@ operation:
             nodeName: LOAD_FUS_TBL_PANEL
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_PANEL') }} "LOAD_FUS_TBL_PANEL"
-        name: ODS_LOAD_FUS_TBL_PANEL
+        name: ODS_FUS_TBL_PANEL
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_PANEL
+  name: ODS_FUS_TBL_PANEL
   overrideSQL: false
   schema: ""
   sqlType: "10"

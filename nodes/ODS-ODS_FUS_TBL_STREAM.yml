@@ -1,6 +1,6 @@
 fileVersion: 1
 id: ef044d2b-d3ee-412d-a7d9-7e5c9601a0c6
-name: ODS_LOAD_FUS_TBL_STREAM
+name: ODS_FUS_TBL_STREAM
 operation:
   config:
     postSQL: ""
@@ -36,6 +36,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_STREAM
         nullable: true
         sourceColumnReferences:
@@ -172,9 +173,9 @@ operation:
             nodeName: LOAD_FUS_TBL_STREAM
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_STREAM') }} "LOAD_FUS_TBL_STREAM"
-        name: ODS_LOAD_FUS_TBL_STREAM
+        name: ODS_FUS_TBL_STREAM
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_STREAM
+  name: ODS_FUS_TBL_STREAM
   overrideSQL: false
   schema: ""
   sqlType: "10"

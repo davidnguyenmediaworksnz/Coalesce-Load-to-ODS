@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
-name: ODS_LOAD_FUS_TBL_PANEL_DOWN_DATES
+name: ODS_FUS_TBL_PANEL_DOWN_DATES
 operation:
   config:
     postSQL: ""
@@ -22,6 +22,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_PANEL_DOWN_DATES
         nullable: true
         sourceColumnReferences:
@@ -129,20 +130,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 788c70af-fbda-44ab-938f-3347e9fcb21e
-          stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
-        config: {}
-        dataType: NUMBER(38,0)
-        description: ""
-        name: UID_PANEL_DOWN_DATES_ADDITIONAL_REASON
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 990763e3-1438-4b31-8e61-ad2064d117ed
-                stepCounter: 09324617-b7f2-43cf-843b-2f2e9eeed12a
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: d99debbe-bcd2-473b-aaa5-57ca2776798d
           stepCounter: 8483fbff-e2b3-4b9b-8002-27d28eb24f75
         config: {}
@@ -214,9 +201,9 @@ operation:
             nodeName: LOAD_FUS_TBL_PANEL_DOWN_DATES
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_PANEL_DOWN_DATES') }} "LOAD_FUS_TBL_PANEL_DOWN_DATES"
-        name: ODS_LOAD_FUS_TBL_PANEL_DOWN_DATES
+        name: ODS_FUS_TBL_PANEL_DOWN_DATES
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_PANEL_DOWN_DATES
+  name: ODS_FUS_TBL_PANEL_DOWN_DATES
   overrideSQL: false
   schema: ""
   sqlType: "10"

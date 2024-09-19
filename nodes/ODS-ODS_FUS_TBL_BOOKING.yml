@@ -4,9 +4,9 @@ name: ODS_FUS_TBL_BOOKING
 operation:
   config:
     postSQL: |-
-      	  UPDATE {{ ref('ODS', 'ODS_LOAD_FUS_TBL_BOOKING') }} ods_fus_tbl_booking
+      	  UPDATE {{ ref('ODS', 'ODS_FUS_TBL_BOOKING') }} ods_fus_tbl_booking
           SET ods_fus_tbl_booking.dss_delete_date = ods_fus_aud_tbl_booking.dtt_audit
-          FROM  {{ ref('ODS', 'ODS_LOAD_FUS_AUD_TBL_BOOKING') }} ods_fus_aud_tbl_booking
+          FROM  {{ ref('ODS', 'ODS_FUS_AUD_TBL_BOOKING') }} ods_fus_aud_tbl_booking
           WHERE ods_fus_tbl_booking.uid_booking = ods_fus_aud_tbl_booking.uid_booking
           AND ods_fus_aud_tbl_booking.str_audit_action = 'D'
     preSQL: ""
@@ -573,6 +573,26 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48e35922-12f6-43db-abaf-894ccc03deb1
+          stepCounter: fb3d2d88-8dc3-4518-b24e-610df7b9986d
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_DELETE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 36b37629-9e75-4826-a9c2-168dd9a6dfc2
+                stepCounter: 593b99cd-21fc-4c9d-99ab-d3cc3162f5b3
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

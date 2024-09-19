@@ -1,6 +1,6 @@
 fileVersion: 1
 id: a8f45f2f-fe79-4661-92e8-98c5de57950d
-name: ODS_LOAD_FUS_AUD_TBL_AMOUNT
+name: ODS_FUS_AUD_TBL_AMOUNT
 operation:
   config:
     postSQL: ""
@@ -22,6 +22,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_AMOUNT
         nullable: true
         sourceColumnReferences:
@@ -36,6 +37,7 @@ operation:
         config: {}
         dataType: VARCHAR(1)
         description: ""
+        isBusinessKey: true
         name: STR_PERIOD
         nullable: true
         sourceColumnReferences:
@@ -50,6 +52,7 @@ operation:
         config: {}
         dataType: NUMBER(19,4)
         description: ""
+        isBusinessKey: true
         name: CUR_RATE_CARD
         nullable: true
         sourceColumnReferences:
@@ -64,6 +67,7 @@ operation:
         config: {}
         dataType: NUMBER(19,4)
         description: ""
+        isBusinessKey: true
         name: CUR_AMOUNT
         nullable: true
         sourceColumnReferences:
@@ -92,6 +96,7 @@ operation:
         config: {}
         dataType: TIMESTAMP_NTZ(9)
         description: ""
+        isBusinessKey: true
         name: DTT_AUDIT
         nullable: true
         sourceColumnReferences:
@@ -106,6 +111,7 @@ operation:
         config: {}
         dataType: VARCHAR(1)
         description: ""
+        isBusinessKey: true
         name: STR_AUDIT_ACTION
         nullable: true
         sourceColumnReferences:
@@ -186,9 +192,9 @@ operation:
             nodeName: LOAD_FUS_AUD_TBL_AMOUNT
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_AUD_TBL_AMOUNT') }} "LOAD_FUS_AUD_TBL_AMOUNT"
-        name: ODS_LOAD_FUS_AUD_TBL_AMOUNT
+        name: ODS_FUS_AUD_TBL_AMOUNT
         noLinkRefs: []
-  name: ODS_LOAD_FUS_AUD_TBL_AMOUNT
+  name: ODS_FUS_AUD_TBL_AMOUNT
   overrideSQL: false
   schema: ""
   sqlType: "10"

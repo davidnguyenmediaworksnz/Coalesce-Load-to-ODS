@@ -1,6 +1,6 @@
 fileVersion: 1
 id: ac46b5f0-755c-4836-9542-41cbd55f3bd4
-name: ODS_LOAD_FUS_TBL_AREA
+name: ODS_FUS_TBL_AREA
 operation:
   config:
     postSQL: ""
@@ -36,6 +36,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: UID_AREA
         nullable: true
         sourceColumnReferences:
@@ -354,9 +355,9 @@ operation:
             nodeName: LOAD_FUS_TBL_AREA
         join:
           joinCondition: FROM {{ ref('SRC', 'LOAD_FUS_TBL_AREA') }} "LOAD_FUS_TBL_AREA"
-        name: ODS_LOAD_FUS_TBL_AREA
+        name: ODS_FUS_TBL_AREA
         noLinkRefs: []
-  name: ODS_LOAD_FUS_TBL_AREA
+  name: ODS_FUS_TBL_AREA
   overrideSQL: false
   schema: ""
   sqlType: "10"

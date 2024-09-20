@@ -1,0 +1,7 @@
+excludeSelector: ""
+fileVersion: 1
+id: "4"
+includeSelector: ""
+name: Run ODS_SNOW_SITE_SCORECARD
+type: Job
+version: 2

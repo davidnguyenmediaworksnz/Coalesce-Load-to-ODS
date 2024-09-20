@@ -1,0 +1,8 @@
+fileVersion: 1
+id: "5"
+name: ODS_SNOW_SITE_SCORECARD
+steps:
+  - 23d9187e-0e62-43f6-8e72-9ca0b8ef1297
+  - 72bc6103-1831-4402-8328-e105e054cb90
+type: Subgraph
+version: 1

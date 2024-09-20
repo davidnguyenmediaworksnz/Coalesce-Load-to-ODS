@@ -1,6 +1,9 @@
 fileVersion: 1
 id: "16"
 mappingDefinitions:
+  LOAD_SNOW_MAPPING:
+    database: ""
+    schema: ""
   ODS:
     database: MW_DW_DEV
     schema: COALESCE_DEV

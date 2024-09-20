@@ -2,8 +2,8 @@ fileVersion: 1
 id: "16"
 mappingDefinitions:
   LOAD_SNOW_MAPPING:
-    database: ""
-    schema: ""
+    database: MW_DW_SNOWPIPE
+    schema: LOAD
   ODS:
     database: MW_DW_DEV
     schema: COALESCE_DEV

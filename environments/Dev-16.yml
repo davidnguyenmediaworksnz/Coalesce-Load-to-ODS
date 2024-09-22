@@ -6,7 +6,7 @@ mappingDefinitions:
     schema: LOAD
   ODS:
     database: MW_DW_DEV
-    schema: ODS_COALESCE
+    schema: ODS_2
   SRC:
     database: MW_DW_PROD
     schema: LOAD

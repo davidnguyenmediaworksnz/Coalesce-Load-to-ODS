@@ -1,0 +1,153 @@
+fileVersion: 1
+id: b57bb3ef-0f37-4a82-8b29-865539eb20c0
+name: LOAD_MDWR_CONTRACTSUMMARY_COST
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7218e94c-ff34-4c80-b5d2-78ff6199e5ef
+          stepCounter: b57bb3ef-0f37-4a82-8b29-865539eb20c0
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: SUMMARYDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62763601-d4ac-4d6a-bb71-3d8e355c2709
+          stepCounter: b57bb3ef-0f37-4a82-8b29-865539eb20c0
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CONTRACTID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36839548-b206-4b07-96cf-61617fafda99
+          stepCounter: b57bb3ef-0f37-4a82-8b29-865539eb20c0
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: STATIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 052ade30-37eb-4515-8e59-839605593e60
+          stepCounter: b57bb3ef-0f37-4a82-8b29-865539eb20c0
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PRODUCTID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f06517de-c218-4d6d-a8af-814735e6442a
+          stepCounter: b57bb3ef-0f37-4a82-8b29-865539eb20c0
+        config: {}
+        dataType: NUMBER(19,5)
+        defaultValue: ""
+        description: ""
+        name: AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4acd9eb-994c-4b7a-899d-28e3647afdd7
+          stepCounter: b57bb3ef-0f37-4a82-8b29-865539eb20c0
+        config: {}
+        dataType: NUMBER(19,5)
+        defaultValue: ""
+        description: ""
+        name: NONDEDUCTIBLEAMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba3071e3-056b-4862-9908-f7a78343be1f
+          stepCounter: b57bb3ef-0f37-4a82-8b29-865539eb20c0
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: OID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_CONTRACTSUMMARY_COST') }}
+  name: LOAD_MDWR_CONTRACTSUMMARY_COST
+  schema: ""
+  sqlType: Source
+  table: LOAD_MDWR_CONTRACTSUMMARY_COST
+  type: sourceInput
+  version: 1
+type: Node

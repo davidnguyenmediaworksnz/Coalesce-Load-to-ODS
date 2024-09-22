@@ -1,0 +1,988 @@
+fileVersion: 1
+id: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+name: ODS_MDWR_STAFF
+operation:
+  config:
+    postSQL: ""
+    preSQL: |2-
+        DELETE FROM {{ ref('ODS', 'ODS_MDWR_STAFF') }} ods_mdwr_staff
+        WHERE ods_mdwr_staff.oid IN (SELECT DISTINCT ods_mdwr_staff.oid FROM {{ ref('ODS', 'ODS_MDWR_STAFF') }} ods_mdwr_staff
+      LEFT JOIN {{ ref('SRC', 'LOAD_MDWR_STAFF') }} load_mdwr_staff
+      ON ods_mdwr_staff.oid = load_mdwr_staff.oid
+      WHERE load_mdwr_staff.oid IS NULL
+      )
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fae0acf8-3288-42f1-af77-955e4e334092
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: OID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8feeee72-7e7e-4240-b227-7456b6989ad7
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f759e71-bbc0-4778-a8c9-73a5a78a36e9
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AUDIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8f460fd4-7162-4336-8481-91886d206d25
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca96d6c1-d37d-4e19-84f1-ce426665c2a7
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(70)
+        description: ""
+        name: CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 369aba1e-98d6-4879-8cef-2eb47b590f99
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4e233a4-9363-41b5-9213-002af13223a8
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 267bd161-4a56-45cf-a05a-025a46ebfe05
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eca2ed84-de0d-4d0a-992e-bb2646ef235c
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: ACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2b36d48c-188b-495a-8848-7b533422aad2
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ebc81a3e-3bf1-481b-8f5e-817d968cbd8c
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BRANCH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7a75fc3b-f38a-416c-ac3a-e5ef6e8c1e97
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4c15270-baed-4173-8c0c-427557351371
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(70)
+        description: ""
+        name: TAXDEPARTMENTNO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f37faa9b-21fa-4b9b-9006-970b5fb186be
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2221fce-b45a-4792-a397-1c85a050be06
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(4000)
+        description: ""
+        name: NOTES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a4226cad-0374-4866-bd28-86c029c7d712
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 483468a8-75b0-4549-a59e-18e430709d70
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: BACKINOFFICE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f7bac7c4-ebf7-401d-b4df-4fb0cdec34e1
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f36f9f0-ff88-4e8f-abf3-a6feedcb6b9d
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: OUTOFOFFICEMESSAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c0a1e132-8bd9-402c-a13d-d75cc59bc314
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73a7ec66-f404-4736-84c0-5d12ea09ffab
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: EMAILSIGNATURE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 029f9d13-f777-4bf4-a7d8-8010f0cb01d8
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe098f1f-3f06-4169-a8bc-ef884036e02b
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ACTUALADDRESSCONTACTPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce90ed16-1e17-4648-ac46-88f4fe90ff11
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 948fb007-de6c-4a84-ad85-646ee67dff77
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: POSTALADDRESSCONTACTPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac2a1a78-c0c0-457d-8724-f2151ceeb4c0
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 43ec012a-89ca-425d-8e0b-28cc3092f43b
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: HOMEPHONECONTACTPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 75a9290a-f317-4d31-8727-4da227a66aa1
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66ee5acb-1b08-48e5-8598-6d209cfb7c62
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: WORKPHONECONTACTPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cd5a752e-62f6-4c60-82ec-9e833e0c177f
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1bded631-8504-43c3-b3af-b2fc2a4a9388
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: MOBILEPHONECONTACTPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69cee292-d192-4aac-80b5-7516ec08de82
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d1e24492-6601-4013-a20c-e4497403df35
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EMAILCONTACTPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ef552813-0f69-4a1d-b222-ac32a44b2399
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ad3c18b-6f12-491e-a379-0aa4546681bd
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FAXCONTACTPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a38f3aaf-5766-45ea-8ae1-d844ef97c9ba
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80dd2479-35aa-480c-9bcd-c2bbd3ddd142
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PREFERREDTRANSPORTCONTACTPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29ca2629-bfa8-4130-8ce5-da11b010aa00
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3d63009-502e-4012-b8ff-9b096868e31b
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: COMMENCEMENTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15d47e45-4b04-4307-bc10-1513b0a2b9c1
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e43e5fa8-f0e5-4144-bc32-34c1d6bb43f4
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: RETIREMENTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a940d305-f1b9-456e-931b-ce92768622cd
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e3f87ce-c328-4358-9a14-af344de35f3a
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: BIRTHDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b8d3dbac-6690-4699-b9ab-5db5ead3ac67
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0e2345e-1cfd-4102-8376-1a0ce704bdd8
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: OPTIMISTICLOCKFIELD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 83bbadfc-d662-4eda-bd13-8448b464f948
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79200436-2ced-4094-a77f-7e7af01e5c61
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: FAMILYNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1f858f7e-b484-42cc-98fd-7f524ad8dc8e
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2069e71-d261-462a-9240-d2d1eb2f3a36
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: GIVENNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac3d6390-e8a0-4309-809e-1d486f802995
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b648db49-5482-44c1-929d-730448c569ce
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: MIDDLENAMES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4cc1e18b-3b8e-4579-a0c9-8526d33cb0b5
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89bcf1ce-0dbb-4962-a053-6f9b9765ef11
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: GENDER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 80e4b8c1-bdd7-4c46-93bf-845193b8ccf7
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c614f439-c347-4b8f-89cb-91274022d173
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: FULLTIMEPARTTIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3a215285-9c19-428c-85b3-1c5f0191b185
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97884f62-f2ea-4230-8052-5b3ae7d221ab
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PERMANENTCASUAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44f505ea-5595-4a8a-b083-2bc71f3d3158
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9ed7871-67bb-415f-a968-94a9d6bf123e
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SALARYWAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6f28bc9-e169-4935-85d2-3e75c284b929
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e48a213d-f0f5-4ca6-af14-979cd1b3a08f
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(70)
+        description: ""
+        name: ACCCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f9888708-d650-4875-8961-7b20a35d8264
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f64222d-5b56-49f4-9d5b-d16f7000de76
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PAYGROUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b937e29f-8eed-4959-b5e6-b6118daed16e
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8bdf7ab2-4992-462c-bd6c-f32e6bddc4ae
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYSTANDARDRATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 81e92dc8-a026-4f6e-b241-a30a8c540b76
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a289098-e19d-4fd2-ae4e-e7facd9fb6d9
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYSTANDARDUNITSPERDAY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a4d227e-e865-4a7f-8fad-02089402e412
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbccbeb9-1b5d-4e4c-b24e-08d8a9c40e3b
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PAYAPPROVALSTAFF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0e2a8912-1cbc-4ddd-a316-b87a53d519f0
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8da2d986-a012-4119-a40f-20778e9e902e
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PAYSLIPCONTACTPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2078f196-4a0a-46a5-b149-9acb677f8b18
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 898e9fa3-0c57-4bc3-aeae-3d2e814862f1
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: PAYTERMINATIONDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8171685f-7b88-4526-9c1f-2d6334655a86
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 103898a8-a0de-4c6c-a785-1885f1fff7df
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: PAYHOLIDAYANNIVERSARYDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9392e424-26f3-4d99-afb9-995a308899aa
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a39bc1ba-7119-425d-a11d-29d1e6db4d45
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYHOLIDAYDAYSPERYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a03162c9-7275-47ae-9b1d-c5be1d0c2407
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2eb9fafd-3cf7-4b36-8b49-1d228f4439d9
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYHOLIDAYGROSSTAXABLELASTYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b24361d1-1475-4ab1-8701-341d77b65bec
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dfe188b1-ba49-4c23-90f0-e831c7216895
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYHOLIDAYUNITSWORKEDLASTYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d0a4b4b-250d-49e3-a75c-87d14672a3d7
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 358a8028-b0ae-42e5-90d2-010e0b41b3c9
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYHOLIDAYGROSSTAXABLETHISYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bcca1a62-79ac-4e58-8424-dd30ffa26926
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eed6cbfc-8185-494c-acfa-f663151d0cf6
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYHOLIDAYUNITSWORKEDTHISYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 100009a3-f383-4ee6-b799-d9fda0d53b6c
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 826a3489-8afe-4ca7-bd4b-51c25dcde7dd
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYHOLIDAYDAYSOUTSTANDING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 39549491-4a26-4376-a4d0-56f786260e39
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a1bf7ec-67b3-4f86-9770-092d29b61f3a
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYHOLIDAYDAYSTAKENINADVANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d155f7a0-c1c3-4c73-9c44-a252c73c820a
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d37d7fe5-7fa0-4f60-9f7f-f950764ab5d4
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYHOLIDAYAMOUNTPAIDINADVANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8245a852-4a7b-4647-9c61-3fe19bf34beb
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7277f21c-38a6-454e-a7c4-96cb0b48eec8
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: PAYSICKANNIVERSARYDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d8cf3477-e294-4507-aa07-be48e4bb10c1
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 674666d9-7c91-4b59-b86b-cf5b90f49d2c
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYSICKDAYSPERYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 09be4502-8c67-4fe4-a9bc-765b4be03f1f
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a30e43e-5179-48ab-8dc3-87620158532a
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYSICKDAYSOUTSTANDING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b2049889-5f1d-47c2-9d9a-21b0b19fc439
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6f0662a-5346-4473-94ef-85b39405fb54
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYSICKDAYSTAKENTHISYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cef3a266-1e93-4a1e-b3b1-e993f60fe9be
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad224ae9-84f6-4160-a0b0-4f2f9d863a08
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYALTERNATEDAYSOUTSTANDING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cd8274eb-8598-42d6-9d8e-130b51a5b416
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5aa817b4-096d-47a0-b2f2-db59c5a3687d
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: PAYLONGSERVICENEXTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d838c0c8-732d-4286-8c22-436c1434078b
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bea06aa3-6cfa-4ca7-8e89-b7c7271abc5c
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: PAYLONGSERVICELASTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2c705f9c-b91b-4321-a701-d69e99fd5812
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9baa85ab-14b2-439e-8238-4b9ac28ddf48
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYLONGSERVICEDAYS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c81f849-adeb-4e56-bc9b-4c9c7be863d8
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65e1387d-5f30-431d-94a2-df2e9155ab81
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYLONGSERVICEDAYSOUTSTANDING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b7a477b-2a84-4890-9f85-3f014c85f0ae
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1333da5-2371-4e90-8aa7-a0d67074a916
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYBEREAVMENTDAYSTAKEN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 86037bdc-8e8c-4bb7-ab6e-f40ecabe78d5
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 44d41cc1-cfc4-41b4-89d5-5a640d524b77
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: PAYTAXYEARENDDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc9a6382-42f2-45a0-ba1e-e78b8b784df6
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67909609-d86c-4e2a-9bc3-433970600b27
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYGROSSTAXABLE31MARLASTYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c9376857-6d40-403f-b4d7-9b3ce4298c84
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58dab68a-f366-42e6-9179-a623f232aa3d
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYEMPLOYERSUPER31MARLASTYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a458bc6-1091-4c37-9d15-475c3d518066
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed4d7041-e73e-445f-8a53-586a7953021c
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYGROSSTAXABLE31MARTHISYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0321da7f-440f-44d7-958a-3a8eeb4da710
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a914fac4-7e01-424a-a11b-0f51030dffe3
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYEMPLOYERSUPER31MARTHISYEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 414a3e6f-c5d1-4411-882e-4449074e3d0a
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d05940e8-0440-4337-a547-6195315ce40e
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STAFFTEAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 18138d8a-7412-458d-884b-34febacd0ef3
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc8dc0d6-3bb8-4c70-897c-4e25dce8a494
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: PAYSTUDENTLOANCOMMISSIONERREMAININGAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6f0543f-bd98-4cc1-bac2-d451a8ba3daa
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a84e6b2-1f89-4d0e-b00d-8147d8ede89a
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5cf846cf-8034-40a2-b0a2-916862af93a2
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 712e97ac-e0a1-4a02-b22a-f516a24848ac
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a4b53c0d-52de-4656-89e6-f33c58ce2261
+                stepCounter: 23b99877-5dbe-43ce-9c39-465a81231124
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 514cbcd0-39a6-4e5b-bd35-03f07348d5c4
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a228ff9-fb76-4044-a339-1c60bb3a4fd3
+          stepCounter: 81c24ef2-d543-4273-91e7-cbe8982fcaf3
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_MDWR_STAFF
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_STAFF') }} "LOAD_MDWR_STAFF"
+        name: ODS_MDWR_STAFF
+        noLinkRefs: []
+  name: ODS_MDWR_STAFF
+  overrideSQL: false
+  schema: ""
+  sqlType: "15"
+  type: sql
+  version: 1
+type: Node

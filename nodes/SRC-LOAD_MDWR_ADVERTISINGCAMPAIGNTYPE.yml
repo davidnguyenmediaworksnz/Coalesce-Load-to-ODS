@@ -1,0 +1,134 @@
+fileVersion: 1
+id: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+name: LOAD_MDWR_ADVERTISINGCAMPAIGNTYPE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10d6af47-a914-42a6-ba0b-a72d4c65fc9b
+          stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e002476c-7f16-4ffb-8dd1-16edc0e49a18
+          stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+        config: {}
+        dataType: VARCHAR(5)
+        defaultValue: ""
+        description: ""
+        name: ACTIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b34ecda2-36b4-43bb-8494-752275a203fd
+          stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+        config: {}
+        dataType: VARCHAR(70)
+        defaultValue: ""
+        description: ""
+        name: CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2981f30c-4e78-4e25-befc-0fb16b7b78fa
+          stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+        config: {}
+        dataType: VARCHAR(255)
+        defaultValue: ""
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d60361b-e074-4f3f-bd3a-3cda34598930
+          stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48e2d6d2-857a-45be-812a-d73628c323be
+          stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_ADVERTISINGCAMPAIGNTYPE') }}
+  name: LOAD_MDWR_ADVERTISINGCAMPAIGNTYPE
+  schema: ""
+  sqlType: Source
+  table: LOAD_MDWR_ADVERTISINGCAMPAIGNTYPE
+  type: sourceInput
+  version: 1
+type: Node

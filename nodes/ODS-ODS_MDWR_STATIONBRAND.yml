@@ -1,0 +1,190 @@
+fileVersion: 1
+id: be4538d5-23a5-44e3-8f78-31f6caf08379
+name: ODS_MDWR_STATIONBRAND
+operation:
+  config:
+    postSQL: ""
+    preSQL: |2-
+        DELETE FROM {{ ref('ODS', 'ODS_MDWR_STATIONBRAND') }} ods_mdwr_stationbrand
+        WHERE ods_mdwr_stationbrand.oid IN (SELECT DISTINCT ods_mdwr_stationbrand.oid FROM {{ ref('ODS', 'ODS_MDWR_STATIONBRAND') }} ods_mdwr_stationbrand
+      LEFT JOIN {{ ref('SRC', 'LOAD_MDWR_STATIONBRAND') }} load_mdwr_stationbrand
+      ON ods_mdwr_stationbrand.oid = load_mdwr_stationbrand.oid
+      WHERE load_mdwr_stationbrand.oid IS NULL
+      )
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7467f276-003f-4b66-a165-5031c7840bf4
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: OID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 778b5fff-4767-49ee-8ec6-0d211b986157
+                stepCounter: 5082320a-0a01-4562-90c1-95e6987544eb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2de5ff1-0b2b-44e9-b9bd-4b9f6a88f5f7
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: ACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ef54df93-2d93-4758-894a-9dc8dd7d1728
+                stepCounter: 5082320a-0a01-4562-90c1-95e6987544eb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2bff13a6-497d-4b4b-be48-b70eafc99592
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: VARCHAR(70)
+        description: ""
+        name: CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c77c4a47-584b-4b7a-b30a-8afd97ffa4d8
+                stepCounter: 5082320a-0a01-4562-90c1-95e6987544eb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf37f8ae-3a08-43e6-b363-e1dd38f274b1
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fc97b94b-24ec-49b7-89f8-02ae6f60e0a3
+                stepCounter: 5082320a-0a01-4562-90c1-95e6987544eb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23512e01-bae3-4086-8ccf-678c6c084331
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SORTORDER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5a9ba272-1f44-4fa3-ad7a-771542305223
+                stepCounter: 5082320a-0a01-4562-90c1-95e6987544eb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 371456f0-f5c9-4dc3-b8fe-922f8dea05cb
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: NONBROADCAST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3a0b3cc9-7dbf-42ec-9f74-175f604e7151
+                stepCounter: 5082320a-0a01-4562-90c1-95e6987544eb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1d5f285-97e3-40cb-9662-61607545befc
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8b24d71d-97ae-4b39-b203-51ea63528aa2
+                stepCounter: 5082320a-0a01-4562-90c1-95e6987544eb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76d27618-6d6e-497b-979d-15f7b4d91631
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 360e57a1-f18c-4840-81d1-246db79ee083
+                stepCounter: 5082320a-0a01-4562-90c1-95e6987544eb
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5677cab-5968-42c0-8dab-1fb810c7b11d
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f4663e0-f8da-439a-9005-0060d27029d6
+          stepCounter: be4538d5-23a5-44e3-8f78-31f6caf08379
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_MDWR_STATIONBRAND
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_STATIONBRAND') }} "LOAD_MDWR_STATIONBRAND"
+        name: ODS_MDWR_STATIONBRAND
+        noLinkRefs: []
+  name: ODS_MDWR_STATIONBRAND
+  overrideSQL: false
+  schema: ""
+  sqlType: "15"
+  type: sql
+  version: 1
+type: Node

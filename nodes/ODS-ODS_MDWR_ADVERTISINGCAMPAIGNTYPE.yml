@@ -1,0 +1,161 @@
+fileVersion: 1
+id: 7482993a-7165-4665-b393-145f5f9ac6e6
+name: ODS_MDWR_ADVERTISINGCAMPAIGNTYPE
+operation:
+  config:
+    postSQL: ""
+    preSQL: |2-
+        DELETE FROM {{ ref('ODS', 'ODS_MDWR_ADVERTISINGCAMPAIGNTYPE') }}
+        WHERE ods_mdwr_advertisingcampaigntype.oid IN (SELECT DISTINCT ods_mdwr_advertisingcampaigntype.oid FROM {{ ref('ODS', 'ODS_MDWR_ADVERTISINGCAMPAIGNTYPE') }} ods_mdwr_advertisingcampaigntype
+      LEFT JOIN {{ ref('SRC', 'LOAD_MDWR_ADVERTISINGCAMPAIGNTYPE') }} load_mdwr_advertisingcampaigntype
+      ON ods_mdwr_advertisingcampaigntype.oid = load_mdwr_advertisingcampaigntype.oid
+      WHERE load_mdwr_advertisingcampaigntype.oid IS NULL)
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10bc2844-7784-4cd6-853c-d5d404cabd66
+          stepCounter: 7482993a-7165-4665-b393-145f5f9ac6e6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: OID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10d6af47-a914-42a6-ba0b-a72d4c65fc9b
+                stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7a09cb1-f529-4856-a731-9edd66ba5b26
+          stepCounter: 7482993a-7165-4665-b393-145f5f9ac6e6
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: ACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e002476c-7f16-4ffb-8dd1-16edc0e49a18
+                stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4799c8ef-0021-4334-97e8-b347f7235cfe
+          stepCounter: 7482993a-7165-4665-b393-145f5f9ac6e6
+        config: {}
+        dataType: VARCHAR(70)
+        description: ""
+        name: CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b34ecda2-36b4-43bb-8494-752275a203fd
+                stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e57a788-d692-4018-985d-1939b0b05191
+          stepCounter: 7482993a-7165-4665-b393-145f5f9ac6e6
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2981f30c-4e78-4e25-befc-0fb16b7b78fa
+                stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00b5c657-b8ad-4954-875e-fca7ca60807d
+          stepCounter: 7482993a-7165-4665-b393-145f5f9ac6e6
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d60361b-e074-4f3f-bd3a-3cda34598930
+                stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0fd877c-3bfb-4403-a27b-e34dae3c6313
+          stepCounter: 7482993a-7165-4665-b393-145f5f9ac6e6
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 48e2d6d2-857a-45be-812a-d73628c323be
+                stepCounter: 6b3de8f4-2a5b-4477-9675-0191dfdb4370
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a0a570f-ca18-41ef-85eb-b69c3c9a728e
+          stepCounter: 7482993a-7165-4665-b393-145f5f9ac6e6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a4fc8ff1-8190-4f93-9ada-7f1a36d6a906
+          stepCounter: 7482993a-7165-4665-b393-145f5f9ac6e6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_MDWR_ADVERTISINGCAMPAIGNTYPE
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_ADVERTISINGCAMPAIGNTYPE') }} "LOAD_MDWR_ADVERTISINGCAMPAIGNTYPE"
+        name: ODS_MDWR_ADVERTISINGCAMPAIGNTYPE
+        noLinkRefs: []
+  name: ODS_MDWR_ADVERTISINGCAMPAIGNTYPE
+  overrideSQL: false
+  schema: ""
+  sqlType: "15"
+  type: sql
+  version: 1
+type: Node

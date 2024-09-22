@@ -1,0 +1,134 @@
+fileVersion: 1
+id: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+name: LOAD_MDWR_COMMITMENTTYPE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b24b59fa-d3e5-4e18-81ff-74067a012c6c
+          stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3766e7a2-8f70-4bbf-b53d-6f016fd68b60
+          stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+        config: {}
+        dataType: VARCHAR(70)
+        defaultValue: ""
+        description: ""
+        name: CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f4a191b-6a03-4fd3-b921-dced9d019f40
+          stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+        config: {}
+        dataType: VARCHAR(255)
+        defaultValue: ""
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd69268f-f643-4a8f-a2f0-d9244006c57f
+          stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+        config: {}
+        dataType: VARCHAR(5)
+        defaultValue: ""
+        description: ""
+        name: ACTIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dd0ce84c-b4d8-4b01-9f3e-c4f829e5d2e2
+          stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 517e4dbc-6f77-4f68-bc51-5f62f7f78ba5
+          stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_COMMITMENTTYPE') }}
+  name: LOAD_MDWR_COMMITMENTTYPE
+  schema: ""
+  sqlType: Source
+  table: LOAD_MDWR_COMMITMENTTYPE
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,183 @@
+fileVersion: 1
+id: e61895ac-d50e-425a-be4d-71de7f1fe725
+name: ODS_MDWR_CONTRACTSUMMARY_SPOT
+operation:
+  config:
+    postSQL: ""
+    preSQL: |2-
+        DELETE FROM {{ ref('ODS', 'ODS_MDWR_CONTRACTSUMMARY_SPOT') }} ods_mdwr_contractsummary_spot
+            WHERE ods_mdwr_contractsummary_spot.oid IN (SELECT DISTINCT ods_mdwr_contractsummary_spot.oid FROM {{ ref('ODS', 'ODS_MDWR_CONTRACTSUMMARY_SPOT') }} ods_mdwr_contractsummary_spot
+      LEFT JOIN {{ ref('SRC', 'LOAD_MDWR_CONTRACTSUMMARY_SPOT') }} load_mdwr_contractsummary_spot
+      ON ods_mdwr_contractsummary_spot.oid = load_mdwr_contractsummary_spot.oid
+      WHERE load_mdwr_contractsummary_spot.oid IS NULL)
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ce64bd7-f0f0-4405-8c3f-553d13aeac6b
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: DATE
+        description: ""
+        name: SUMMARYDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d69946d-2bf9-4b5b-85d1-c6c0489de550
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38d22cb9-93d7-45cc-8d70-a3354e548ca0
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CONTRACTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: adebf563-4a8c-49ec-89f4-5e1f8ace0b37
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32bb4db1-2b23-43b0-b531-7861a9392e84
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STATIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 07a37323-0fef-4d58-a822-5c5fde1570e2
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f98521b-1b83-4e44-a442-20db7dac3d36
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRODUCTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 029777e4-9b65-49f7-ad1f-f7f70b44b2a8
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec322ee9-a45c-4ded-9571-384f2397ce12
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BLOCKED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 257d8b98-efdc-45af-8c44-fc2806ade9db
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0e6f3b1-0710-4fda-8d1c-bd13da541ee1
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: NUMBER(19,5)
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6fe75f2d-20aa-45af-a954-0a3c1f7d5381
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04169759-a5f3-49fb-a442-b17b44a4ae72
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: NUMBER(19,5)
+        description: ""
+        name: DISCOUNTAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1fb33ab4-1d83-42c2-be53-2c4fe31fba7b
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f91d4ab6-07c6-46b3-bca2-ec50f4d79b0b
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: NUMBER(19,5)
+        description: ""
+        name: COMMISSIONAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92f22fa5-f6f7-453d-8a68-0f18e05ac652
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5759d282-e9cc-4344-8993-9fa6903c5dd1
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: NUMBER(19,5)
+        description: ""
+        name: BOOKINGFEEAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 37838827-a341-4e87-8349-68cc513c53ae
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd63ef55-5077-484d-b60d-e213ce40c0a0
+          stepCounter: e61895ac-d50e-425a-be4d-71de7f1fe725
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        isBusinessKey: true
+        name: OID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a4b56b4-c751-44e5-888f-15815d819da2
+                stepCounter: 78eeeda5-1a25-4ff0-8cc2-d64ed4e2fe13
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_MDWR_CONTRACTSUMMARY_SPOT
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_CONTRACTSUMMARY_SPOT') }} "LOAD_MDWR_CONTRACTSUMMARY_SPOT"
+        name: ODS_MDWR_CONTRACTSUMMARY_SPOT
+        noLinkRefs: []
+  name: ODS_MDWR_CONTRACTSUMMARY_SPOT
+  overrideSQL: false
+  schema: ""
+  sqlType: "15"
+  type: sql
+  version: 1
+type: Node

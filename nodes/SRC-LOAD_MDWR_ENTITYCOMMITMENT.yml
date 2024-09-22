@@ -1,0 +1,248 @@
+fileVersion: 1
+id: 12b9ca44-5c37-4bbd-badc-076215134aff
+name: LOAD_MDWR_ENTITYCOMMITMENT
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 113c6501-8035-426a-838e-ba72791006d0
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: STARTDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa1c9655-1d65-49b8-ba0c-c3a6fa9116b7
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: ENDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee8b7745-0faf-4c8c-8427-98b5a2fcee92
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        name: ANNUALAMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdc1045b-9432-42ad-8631-3d41e23411d3
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: COMMITMENTTYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0567ffa7-cd17-4005-b799-8339b9a50e2a
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: VARCHAR(36)
+        defaultValue: ""
+        description: ""
+        name: CLIENTID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e64c6b1-d395-40f9-b891-338f670a98d3
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: VARCHAR(36)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2743221b-f8c1-47b6-bd69-1cb678aa6ceb
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CREATEDBYID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28aaf431-2b72-4099-abb8-0de6e7de4396
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: VARCHAR(37)
+        defaultValue: ""
+        description: ""
+        name: CREATEDAT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 908b95d8-1ba6-483b-a450-c11435a645ca
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: VARCHAR(37)
+        defaultValue: ""
+        description: ""
+        name: MODIFIEDAT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8af940a0-7b4c-411a-82f4-17222bc07747
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5738d18-4ecf-42f8-b722-7e31324acadb
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d1f1bf18-aebe-440e-9f40-41d7b57dec82
+          stepCounter: 12b9ca44-5c37-4bbd-badc-076215134aff
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_ENTITYCOMMITMENT') }}
+  name: LOAD_MDWR_ENTITYCOMMITMENT
+  schema: ""
+  sqlType: Source
+  table: LOAD_MDWR_ENTITYCOMMITMENT
+  type: sourceInput
+  version: 1
+type: Node

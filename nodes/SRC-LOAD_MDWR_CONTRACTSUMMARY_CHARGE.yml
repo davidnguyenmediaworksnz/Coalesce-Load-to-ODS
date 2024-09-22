@@ -1,0 +1,191 @@
+fileVersion: 1
+id: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+name: LOAD_MDWR_CONTRACTSUMMARY_CHARGE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c823d97d-f2d3-44a6-b4b8-dc7278fee9d9
+          stepCounter: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: SUMMARYDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf11169a-5419-419e-a6d8-cd902a0f61f1
+          stepCounter: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CONTRACTID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: adf6dd25-f702-4bb8-9df3-88ca31b4178a
+          stepCounter: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: STATIONID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfaca8cd-327a-47b4-aa0a-19ed478f8608
+          stepCounter: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PRODUCTID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52919a6d-3fc8-403f-a1b3-490a28e46550
+          stepCounter: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BLOCKED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6c3360b-0f9f-4cde-bef0-46487085f057
+          stepCounter: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+        config: {}
+        dataType: NUMBER(19,5)
+        defaultValue: ""
+        description: ""
+        name: AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdc4c4fc-235f-4826-83c9-5197123b4d2a
+          stepCounter: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+        config: {}
+        dataType: NUMBER(19,5)
+        defaultValue: ""
+        description: ""
+        name: COMMISSIONAMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5dcfa05a-671b-4821-9141-32014522611c
+          stepCounter: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+        config: {}
+        dataType: NUMBER(19,5)
+        defaultValue: ""
+        description: ""
+        name: BOOKINGFEEAMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8f90369-20bf-4bde-bae5-57735f3f070b
+          stepCounter: 31c2fa03-6dcf-45ec-b5a2-a555b2391fab
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: OID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_CONTRACTSUMMARY_CHARGE') }}
+  name: LOAD_MDWR_CONTRACTSUMMARY_CHARGE
+  schema: ""
+  sqlType: Source
+  table: LOAD_MDWR_CONTRACTSUMMARY_CHARGE
+  type: sourceInput
+  version: 1
+type: Node

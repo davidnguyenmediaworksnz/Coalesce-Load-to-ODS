@@ -1,0 +1,161 @@
+fileVersion: 1
+id: e2f8f897-02ea-463c-b340-a794c5d33094
+name: ODS_MDWR_COMMITMENTTYPE
+operation:
+  config:
+    postSQL: ""
+    preSQL: |2-
+        DELETE FROM {{ ref('ODS', 'ODS_MDWR_COMMITMENTTYPE') }} ods_mdwr_commitmenttype
+        WHERE ods_mdwr_commitmenttype.oid IN (SELECT DISTINCT ods_mdwr_commitmenttype.oid FROM {{ ref('ODS', 'ODS_MDWR_COMMITMENTTYPE') }} ods_mdwr_commitmenttype
+      LEFT JOIN {{ ref('SRC', 'LOAD_MDWR_COMMITMENTTYPE') }} load_mdwr_commitmenttype
+      ON ods_mdwr_commitmenttype.oid = load_mdwr_commitmenttype.oid
+      WHERE load_mdwr_commitmenttype.oid IS NULL)
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d5663a4-2870-4e4b-a2de-aeb79adc7422
+          stepCounter: e2f8f897-02ea-463c-b340-a794c5d33094
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: OID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b24b59fa-d3e5-4e18-81ff-74067a012c6c
+                stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17b41f2e-4992-4b84-b341-aaf63f56f604
+          stepCounter: e2f8f897-02ea-463c-b340-a794c5d33094
+        config: {}
+        dataType: VARCHAR(70)
+        description: ""
+        name: CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3766e7a2-8f70-4bbf-b53d-6f016fd68b60
+                stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33510d7a-62cb-44bc-8578-773ea4fdd0a2
+          stepCounter: e2f8f897-02ea-463c-b340-a794c5d33094
+        config: {}
+        dataType: VARCHAR(255)
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f4a191b-6a03-4fd3-b921-dced9d019f40
+                stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a8c4173-0795-4a06-bf5c-6470f40ad278
+          stepCounter: e2f8f897-02ea-463c-b340-a794c5d33094
+        config: {}
+        dataType: VARCHAR(5)
+        description: ""
+        name: ACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bd69268f-f643-4a8f-a2f0-d9244006c57f
+                stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: acfc7f2d-f286-4b57-9d8c-1a1a36a9ca81
+          stepCounter: e2f8f897-02ea-463c-b340-a794c5d33094
+        config: {}
+        dataType: VARCHAR(64)
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dd0ce84c-b4d8-4b01-9f3e-c4f829e5d2e2
+                stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0146a2b1-617f-4211-a291-fb2c7eb256d5
+          stepCounter: e2f8f897-02ea-463c-b340-a794c5d33094
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 517e4dbc-6f77-4f68-bc51-5f62f7f78ba5
+                stepCounter: 4f60ffb6-3e18-41a9-8743-802af2e5d8f6
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ff04479-9f14-49c8-96f6-b99001a56668
+          stepCounter: e2f8f897-02ea-463c-b340-a794c5d33094
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 461c1861-fae5-48a1-8cee-0e5b14ef039c
+          stepCounter: e2f8f897-02ea-463c-b340-a794c5d33094
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_MDWR_COMMITMENTTYPE
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_COMMITMENTTYPE') }} "LOAD_MDWR_COMMITMENTTYPE"
+        name: ODS_MDWR_COMMITMENTTYPE
+        noLinkRefs: []
+  name: ODS_MDWR_COMMITMENTTYPE
+  overrideSQL: false
+  schema: ""
+  sqlType: "15"
+  type: sql
+  version: 1
+type: Node

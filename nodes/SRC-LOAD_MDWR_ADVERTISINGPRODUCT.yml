@@ -1,0 +1,153 @@
+fileVersion: 1
+id: 65ad56c2-4504-4f03-882a-bf56eac0c90a
+name: LOAD_MDWR_ADVERTISINGPRODUCT
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba608e47-4fd4-4884-b5cb-801e70d4e047
+          stepCounter: 65ad56c2-4504-4f03-882a-bf56eac0c90a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5f2afd3-c198-468e-b4e8-37e6ed9e86a4
+          stepCounter: 65ad56c2-4504-4f03-882a-bf56eac0c90a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ACTIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c40228dc-b346-44fb-a938-700fce9c4361
+          stepCounter: 65ad56c2-4504-4f03-882a-bf56eac0c90a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CREATEDBYID
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d66a1fd1-4108-4e95-8624-646d10e1d040
+          stepCounter: 65ad56c2-4504-4f03-882a-bf56eac0c90a
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: CREATEDAT
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8136b73-5302-4767-b160-7be8a0b4c223
+          stepCounter: 65ad56c2-4504-4f03-882a-bf56eac0c90a
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: MODIFIEDAT
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8cf17d1b-b115-452b-8876-e84e53d12344
+          stepCounter: 65ad56c2-4504-4f03-882a-bf56eac0c90a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OID
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b3e4d6f-0e63-4bb2-915a-023bf090e739
+          stepCounter: 65ad56c2-4504-4f03-882a-bf56eac0c90a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: MODIFIEDBYID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_ADVERTISINGPRODUCT') }}
+  name: LOAD_MDWR_ADVERTISINGPRODUCT
+  schema: ""
+  sqlType: Source
+  table: LOAD_MDWR_ADVERTISINGPRODUCT
+  type: sourceInput
+  version: 1
+type: Node

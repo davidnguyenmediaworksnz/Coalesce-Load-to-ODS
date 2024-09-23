@@ -1,0 +1,172 @@
+fileVersion: 1
+id: 321158e8-001f-4ffa-af2e-4de6e113b68a
+name: LOAD_SNOW_MAPPPING_QMS_MONTHLYBUDGET
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: LOAD_SNOW_MAPPING
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 107eb326-8758-40e9-b742-b65e52ba12d7
+          stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FIN_YEAR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b3bbdef-ce8a-40fb-b364-5056f04a79a8
+          stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: MONTH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1bd828fc-477f-4bad-8abb-1e39b117c3db
+          stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: REPORT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d8398e7-1268-4ba2-9d8e-d704cfad2e6d
+          stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: BUDGET_MODEL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f0cbb44-339e-4dd8-a337-322446526d22
+          stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: BUDGET_CATEGORY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c231d4c0-2a84-4916-9e18-1fe0e44136b0
+          stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: BUDGET_CATEGORY_DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c8a538c-3798-4196-9c01-7863daee296e
+          stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6201916-22a3-4146-a756-ad2540b7e908
+          stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: NOTES
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPPING_QMS_MONTHLYBUDGET') }}
+  name: LOAD_SNOW_MAPPPING_QMS_MONTHLYBUDGET
+  schema: ""
+  sqlType: Source
+  table: LOAD_SNOW_MAPPPING_QMS_MONTHLYBUDGET
+  type: sourceInput
+  version: 1
+type: Node

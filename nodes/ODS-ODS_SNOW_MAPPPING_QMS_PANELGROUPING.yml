@@ -1,0 +1,138 @@
+fileVersion: 1
+id: c82b27c5-5f49-48ff-983e-baebf37e34bf
+name: ODS_SNOW_MAPPPING_QMS_PANELGROUPING
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3afd0b21-85e7-4555-8799-4a4af9ad443a
+          stepCounter: c82b27c5-5f49-48ff-983e-baebf37e34bf
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        isBusinessKey: true
+        name: PANEL_GROUPING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7802cc94-e702-4e2c-b142-768ae19b0063
+                stepCounter: b5500c66-0ecb-43ed-8552-2253193f5ec2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70b77f1f-88ff-46ab-a202-3da6a6485f2e
+          stepCounter: c82b27c5-5f49-48ff-983e-baebf37e34bf
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: PANEL_NO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1feeb366-c0fb-4054-b5d7-af11ef1aa760
+                stepCounter: b5500c66-0ecb-43ed-8552-2253193f5ec2
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f297ca6-1b20-4668-bed2-f50b316fa925
+          stepCounter: c82b27c5-5f49-48ff-983e-baebf37e34bf
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c877f641-5eaa-4c67-8279-9794238f4185
+          stepCounter: c82b27c5-5f49-48ff-983e-baebf37e34bf
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36e7df3e-9716-4080-953b-e03a5495931f
+          stepCounter: c82b27c5-5f49-48ff-983e-baebf37e34bf
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed51ed64-6da2-41dd-a977-7fdeebdc0f92
+          stepCounter: c82b27c5-5f49-48ff-983e-baebf37e34bf
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPPING_QMS_PANELGROUPING'"
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPPING_QMS_PANELGROUPING
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPPING_QMS_PANELGROUPING') }} "LOAD_SNOW_MAPPPING_QMS_PANELGROUPING"
+        name: ODS_SNOW_MAPPPING_QMS_PANELGROUPING
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPPING_QMS_PANELGROUPING
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

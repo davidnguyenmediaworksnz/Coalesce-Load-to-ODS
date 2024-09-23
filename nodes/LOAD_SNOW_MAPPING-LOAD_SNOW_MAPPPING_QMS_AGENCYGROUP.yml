@@ -1,0 +1,77 @@
+fileVersion: 1
+id: b24f382d-350c-488d-a5cb-834a0d8d0c41
+name: LOAD_SNOW_MAPPPING_QMS_AGENCYGROUP
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: LOAD_SNOW_MAPPING
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e215483e-2d5a-4323-b1bd-8537d6d5901c
+          stepCounter: b24f382d-350c-488d-a5cb-834a0d8d0c41
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: AGENCY_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9bf7d30c-33cc-49c4-b466-f0f26cef2928
+          stepCounter: b24f382d-350c-488d-a5cb-834a0d8d0c41
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: AGENCY_GROUP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b844908-05b6-4e0d-8c75-d7a4d4c893b8
+          stepCounter: b24f382d-350c-488d-a5cb-834a0d8d0c41
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: AGENCY_CONSOLIDATED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPPING_QMS_AGENCYGROUP') }}
+  name: LOAD_SNOW_MAPPPING_QMS_AGENCYGROUP
+  schema: ""
+  sqlType: Source
+  table: LOAD_SNOW_MAPPPING_QMS_AGENCYGROUP
+  type: sourceInput
+  version: 1
+type: Node

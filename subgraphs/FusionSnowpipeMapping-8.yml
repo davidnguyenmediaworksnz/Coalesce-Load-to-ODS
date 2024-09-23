@@ -1,0 +1,18 @@
+fileVersion: 1
+id: "8"
+name: Fusion Snowpipe Mapping
+steps:
+  - 1ddc7208-20cb-460e-bd70-8f3d0a031013
+  - 321158e8-001f-4ffa-af2e-4de6e113b68a
+  - 44a0af50-bddf-4e65-870e-23bd056f55ce
+  - 521e6290-c16b-4fe9-965d-bf9d236592b2
+  - 5dce1cd3-db59-4feb-b4bd-38bc826e739e
+  - 859432b2-f9f0-460b-84bc-70355d76272d
+  - 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+  - b24f382d-350c-488d-a5cb-834a0d8d0c41
+  - b5500c66-0ecb-43ed-8552-2253193f5ec2
+  - c292001c-40a2-49f1-b324-4bfc7c119101
+  - c82b27c5-5f49-48ff-983e-baebf37e34bf
+  - f50b6b28-0fa2-40a0-af32-f30822eb1901
+type: Subgraph
+version: 1

@@ -3,7 +3,7 @@ id: 23d9187e-0e62-43f6-8e72-9ca0b8ef1297
 name: ODS_SNOW_SITE_SCORECARD
 operation:
   config:
-    postSQL: " TRUNCATE TABLE MW_DW_SNOWPIPE.LOAD.LOAD_SNOW_SITE_SCORECARD"
+    postSQL: ""
     preSQL: |-
       DELETE FROM {{ ref('ODS', 'ODS_SNOW_SITE_SCORECARD') }}
         WHERE ods_snow_site_scorecard.billmonth >= TO_NUMBER(TO_CHAR(CURRENT_DATE(),'YYYYMM'))-2

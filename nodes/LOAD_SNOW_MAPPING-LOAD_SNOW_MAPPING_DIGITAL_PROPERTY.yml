@@ -1,0 +1,58 @@
+fileVersion: 1
+id: 307aa02b-58d6-4e5d-9d03-819c1a607c2c
+name: LOAD_SNOW_MAPPING_DIGITAL_PROPERTY
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: LOAD_SNOW_MAPPING
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff92935b-645a-4adc-8ebf-820e759ecb69
+          stepCounter: 307aa02b-58d6-4e5d-9d03-819c1a607c2c
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: DIGI_PROPERTIES
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c8a6dc9-685d-4e05-972e-edcf05a2251d
+          stepCounter: 307aa02b-58d6-4e5d-9d03-819c1a607c2c
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: MAPPING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_DIGITAL_PROPERTY') }}
+  name: LOAD_SNOW_MAPPING_DIGITAL_PROPERTY
+  schema: ""
+  sqlType: Source
+  table: LOAD_SNOW_MAPPING_DIGITAL_PROPERTY
+  type: sourceInput
+  version: 1
+type: Node

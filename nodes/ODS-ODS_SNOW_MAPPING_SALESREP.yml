@@ -1,0 +1,221 @@
+fileVersion: 1
+id: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+name: ODS_SNOW_MAPPING_SALESREP
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1219c32-335c-49ac-b400-60a9bd24ccfd
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: VARCHAR(75)
+        description: ""
+        isBusinessKey: true
+        name: DRIVE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 908a5121-80ec-46b5-b8da-7a5fc897f4a5
+                stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b455f6e4-990e-45ee-a004-007f61eb09b1
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SALES_REP_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 94297616-b889-4d06-a7da-cfa645f2fe71
+                stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eea7510a-99f1-4f0a-a04e-0815c1767fe1
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: EMAIL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0778b331-5a4b-441f-9e7f-593551975f4a
+                stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6865bf32-e561-40d1-b2b9-51f8885dd84b
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: VARCHAR(75)
+        description: ""
+        name: HR_EMPLOYEE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a66fa69f-3692-4ef3-8a82-3841a391714e
+                stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8c7c898-ce8c-467f-a2d3-80eae0ee9235
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: VARCHAR(75)
+        description: ""
+        name: SALES_MANAGER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 76979ce9-53b2-4451-a165-56dd1fe034d7
+                stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b607865-9438-4f47-81ca-ef9f0d33c2f6
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: VARCHAR(75)
+        description: ""
+        name: GENERAL_MANAGER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5e77e6a8-c447-458c-ab3b-cfd70aeba0ac
+                stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf9e98ea-60a5-4ea1-ae67-e2d782055169
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: VARCHAR(75)
+        description: ""
+        name: REGIONAL_MAAGER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c663d51f-4b02-49da-85e3-0f1aed83af9d
+                stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b341a1e7-e757-4157-9fba-47e625541877
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: REGION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 255903e5-2bf6-474f-8b82-578beb2d7a5c
+                stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6ba514d-6ae6-48e9-b432-7b0ab1897476
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPING_SALESREP'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 091bcb8d-9ac8-4231-a459-8ea7f3fca08b
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ab52666-02dd-43ec-a08e-905190761a23
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5a8d04a-355f-41ac-a7d7-d68a085328e0
+          stepCounter: cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_SALESREP
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_SALESREP') }} "LOAD_SNOW_MAPPING_SALESREP"
+        name: ODS_SNOW_MAPPING_SALESREP
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_SALESREP
+  overrideSQL: false
+  schema: ""
+  sqlType: "19"
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,138 @@
+fileVersion: 1
+id: efce5e9b-d068-41da-8814-7a8633df6cca
+name: ODS_SNOW_MAPPING_RADIO_LOCAL_NAT
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46e90e0f-4bf1-4b1a-baea-d34e88ed9de3
+          stepCounter: efce5e9b-d068-41da-8814-7a8633df6cca
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: MARKET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b37478d6-f015-42dd-a4bb-e33f07410beb
+                stepCounter: def7315a-5d58-4b6e-b576-7a9bda1e41ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18565580-3d9a-4518-b3fb-6f1f3cf1f4fb
+          stepCounter: efce5e9b-d068-41da-8814-7a8633df6cca
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: SALES_CHANNEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3ba0e46b-fd86-4cfc-87fb-ad4c34f13bf6
+                stepCounter: def7315a-5d58-4b6e-b576-7a9bda1e41ec
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4fa1730-7a20-4961-baa3-653211406bfa
+          stepCounter: efce5e9b-d068-41da-8814-7a8633df6cca
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPING_RADIO_LOCAL_NAT'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46ec03c3-046d-443c-a83a-e9dd70b2342e
+          stepCounter: efce5e9b-d068-41da-8814-7a8633df6cca
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e265f576-a187-48be-8d7b-5192d19aadef
+          stepCounter: efce5e9b-d068-41da-8814-7a8633df6cca
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3533ea24-c19b-4fe9-9d62-78d38d75c0bd
+          stepCounter: efce5e9b-d068-41da-8814-7a8633df6cca
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_RADIO_LOCAL_NAT
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_RADIO_LOCAL_NAT') }} "LOAD_SNOW_MAPPING_RADIO_LOCAL_NAT"
+        name: ODS_SNOW_MAPPING_RADIO_LOCAL_NAT
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_RADIO_LOCAL_NAT
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

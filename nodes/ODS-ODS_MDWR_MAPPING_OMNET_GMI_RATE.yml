@@ -1,0 +1,100 @@
+fileVersion: 1
+id: 3c1e040c-1895-4076-a2da-9ca0ab6bdd99
+name: ODS_MDWR_MAPPING_OMNET_GMI_RATE
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: af6d41a5-0313-4813-b56e-520754c77147
+          stepCounter: 3c1e040c-1895-4076-a2da-9ca0ab6bdd99
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        isBusinessKey: true
+        name: OMNET_GMI_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 80f19cd1-328e-41bf-a600-6af427190793
+                stepCounter: 278dfd49-a97f-4f04-9ca4-b73ba5512325
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: affac880-1430-437b-bd56-6fb8cab12a43
+          stepCounter: 3c1e040c-1895-4076-a2da-9ca0ab6bdd99
+        config: {}
+        dataType: NUMBER(20,2)
+        description: ""
+        name: OMNET_GMI_RATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 33909fa7-6588-420e-bdaa-44543c150038
+                stepCounter: 278dfd49-a97f-4f04-9ca4-b73ba5512325
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b78d4542-84a3-4f49-87bf-6e1361bca8b7
+          stepCounter: 3c1e040c-1895-4076-a2da-9ca0ab6bdd99
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77332ab5-bef2-44b0-97bd-54b3bd645118
+          stepCounter: 3c1e040c-1895-4076-a2da-9ca0ab6bdd99
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOAD_MDWR_MAPPING_OMNET_GMI_RATE
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOAD_MDWR_MAPPING_OMNET_GMI_RATE') }} "LOAD_MDWR_MAPPING_OMNET_GMI_RATE"
+        name: ODS_MDWR_MAPPING_OMNET_GMI_RATE
+        noLinkRefs: []
+  name: ODS_MDWR_MAPPING_OMNET_GMI_RATE
+  overrideSQL: false
+  schema: ""
+  sqlType: "17"
+  type: sql
+  version: 1
+type: Node

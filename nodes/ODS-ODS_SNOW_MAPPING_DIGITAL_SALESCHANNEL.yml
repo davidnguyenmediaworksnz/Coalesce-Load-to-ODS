@@ -1,0 +1,165 @@
+fileVersion: 1
+id: 6fc3457d-2a54-4ab1-837c-40bdda40047a
+name: ODS_SNOW_MAPPING_DIGITAL_SALESCHANNEL
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 041147f8-b445-4d1b-9d91-5b98b8b36da7
+          stepCounter: 6fc3457d-2a54-4ab1-837c-40bdda40047a
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: SALES_REP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dc274600-892b-463c-95ef-86c5b235605d
+                stepCounter: 0e19acd8-b21e-4181-a619-91577a5194ca
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70fa1d1d-93f2-4ad0-a2d0-8c4fd06740f7
+          stepCounter: 6fc3457d-2a54-4ab1-837c-40bdda40047a
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: AM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dc2a3570-e6c4-4b79-b4f2-1887120682fd
+                stepCounter: 0e19acd8-b21e-4181-a619-91577a5194ca
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e46e6955-12e6-4817-afc7-592d61c35527
+          stepCounter: 6fc3457d-2a54-4ab1-837c-40bdda40047a
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: MARKET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d6c3b91-c340-42e3-8364-635868913973
+                stepCounter: 0e19acd8-b21e-4181-a619-91577a5194ca
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7662cee7-48b8-49a1-9fe5-040bdf8d69f7
+          stepCounter: 6fc3457d-2a54-4ab1-837c-40bdda40047a
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: POD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3f6b179c-c84c-4c00-af1b-0443aa7da664
+                stepCounter: 0e19acd8-b21e-4181-a619-91577a5194ca
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2883ea65-5c0b-4ce6-8019-3b418080bb34
+          stepCounter: 6fc3457d-2a54-4ab1-837c-40bdda40047a
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPING_DIGITAL_SALESCHANNEL'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 962e975a-23de-4fbb-9ff0-2898147cf4fd
+          stepCounter: 6fc3457d-2a54-4ab1-837c-40bdda40047a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7a6d8ac-e31e-4b13-8c65-a809114d95a8
+          stepCounter: 6fc3457d-2a54-4ab1-837c-40bdda40047a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5fc2aaad-695c-4def-86a8-089f8f0e2fbe
+          stepCounter: 6fc3457d-2a54-4ab1-837c-40bdda40047a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_DIGITAL_SALESCHANNEL
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_DIGITAL_SALESCHANNEL') }} "LOAD_SNOW_MAPPING_DIGITAL_SALESCHANNEL"
+        name: ODS_SNOW_MAPPING_DIGITAL_SALESCHANNEL
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_DIGITAL_SALESCHANNEL
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,58 @@
+fileVersion: 1
+id: def7315a-5d58-4b6e-b576-7a9bda1e41ec
+name: LOAD_SNOW_MAPPING_RADIO_LOCAL_NAT
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: LOAD_SNOW_MAPPING
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b37478d6-f015-42dd-a4bb-e33f07410beb
+          stepCounter: def7315a-5d58-4b6e-b576-7a9bda1e41ec
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: MARKET
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ba0e46b-fd86-4cfc-87fb-ad4c34f13bf6
+          stepCounter: def7315a-5d58-4b6e-b576-7a9bda1e41ec
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: SALES_CHANNEL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_RADIO_LOCAL_NAT') }}
+  name: LOAD_SNOW_MAPPING_RADIO_LOCAL_NAT
+  schema: ""
+  sqlType: Source
+  table: LOAD_SNOW_MAPPING_RADIO_LOCAL_NAT
+  type: sourceInput
+  version: 1
+type: Node

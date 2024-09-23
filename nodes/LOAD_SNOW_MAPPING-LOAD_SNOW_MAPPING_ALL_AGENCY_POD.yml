@@ -1,0 +1,96 @@
+fileVersion: 1
+id: 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+name: LOAD_SNOW_MAPPING_ALL_AGENCY_POD
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: LOAD_SNOW_MAPPING
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51f7bf25-9441-4df5-8000-2c9997a897c3
+          stepCounter: 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ORIGINAL_AGENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48465245-9ee4-4e42-abab-c6c79f3df6e0
+          stepCounter: 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: MAPPED_AGENCY_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89448876-5ce6-47c5-9815-b2c53af567c0
+          stepCounter: 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: POD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: edbef78b-0e69-4892-8f77-9357e58c2640
+          stepCounter: 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: SOURCE_SYSTEM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_ALL_AGENCY_POD') }}
+  name: LOAD_SNOW_MAPPING_ALL_AGENCY_POD
+  schema: ""
+  sqlType: Source
+  table: LOAD_SNOW_MAPPING_ALL_AGENCY_POD
+  type: sourceInput
+  version: 1
+type: Node

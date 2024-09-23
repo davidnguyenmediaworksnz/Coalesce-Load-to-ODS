@@ -1,0 +1,157 @@
+fileVersion: 1
+id: d947f84f-f676-452e-a120-71a2c5c593e0
+name: ODS_SNOW_MAPPING_DIGITAL_MAP
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1df74850-a7c9-4615-8ffd-d81f4ba129c4
+          stepCounter: d947f84f-f676-452e-a120-71a2c5c593e0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        isBusinessKey: true
+        name: SALES_REP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7c21c88e-1328-479d-8757-6525a43b481f
+                stepCounter: f3cf86e0-1d7f-4185-a74b-41460fc74658
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 391171ce-7e3e-42b3-86ca-14be6cbea7c8
+          stepCounter: d947f84f-f676-452e-a120-71a2c5c593e0
+        config: {}
+        dataType: VARCHAR(512)
+        description: ""
+        isBusinessKey: true
+        name: MWLCONTACT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1209f338-066b-4a5a-a1c3-f20f4fa4a551
+                stepCounter: f3cf86e0-1d7f-4185-a74b-41460fc74658
+            transform: NVL(load_snow_mapping_digital_map.mwlcontact,'UNKNOWN')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 912b1ad9-f257-4425-b3fe-dbd92f309494
+          stepCounter: d947f84f-f676-452e-a120-71a2c5c593e0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CHANNEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53a64e61-b61e-46f4-ae72-8fd1c597c71b
+                stepCounter: f3cf86e0-1d7f-4185-a74b-41460fc74658
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99289c36-05a2-4b41-9d32-630ae732dad4
+          stepCounter: d947f84f-f676-452e-a120-71a2c5c593e0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: MAPPED_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0171432-fa38-4828-807a-25f6ec0f2446
+                stepCounter: f3cf86e0-1d7f-4185-a74b-41460fc74658
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a254e872-7b6b-4a9e-9fc8-274af4b51aa3
+          stepCounter: d947f84f-f676-452e-a120-71a2c5c593e0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: POD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e03b13d-4949-49f7-9d85-daa1bba15818
+                stepCounter: f3cf86e0-1d7f-4185-a74b-41460fc74658
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fedadb75-860b-4593-ab94-2c2b33b6c73e
+          stepCounter: d947f84f-f676-452e-a120-71a2c5c593e0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: MARKET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f02b7272-1849-424a-9af2-bbbbdab88b87
+                stepCounter: f3cf86e0-1d7f-4185-a74b-41460fc74658
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 264ccb13-55f2-46f3-9cb0-3a7eb708e41c
+          stepCounter: d947f84f-f676-452e-a120-71a2c5c593e0
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8311aa3f-0183-40b3-9255-447a0cde691a
+          stepCounter: d947f84f-f676-452e-a120-71a2c5c593e0
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_DIGITAL_MAP
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_DIGITAL_MAP') }} "LOAD_SNOW_MAPPING_DIGITAL_MAP"
+        name: ODS_SNOW_MAPPING_DIGITAL_MAP
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_DIGITAL_MAP
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

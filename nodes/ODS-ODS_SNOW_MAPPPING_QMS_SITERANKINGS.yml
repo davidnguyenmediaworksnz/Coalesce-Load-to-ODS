@@ -1,0 +1,129 @@
+fileVersion: 1
+id: 859432b2-f9f0-460b-84bc-70355d76272d
+name: ODS_SNOW_MAPPPING_QMS_SITERANKINGS
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7051d9e1-b6c6-461b-87bb-8e2a1e8e3512
+          stepCounter: 859432b2-f9f0-460b-84bc-70355d76272d
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: PANEL_NO_RPT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e5d4a29-7aed-4cae-9252-a91b06da3c3f
+                stepCounter: 1ddc7208-20cb-460e-bd70-8f3d0a031013
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ad37762-cd80-4d4e-90b8-99a1c46fb874
+          stepCounter: 859432b2-f9f0-460b-84bc-70355d76272d
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: SITE_RANKINGS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 849e0c3d-e78e-483a-9319-4675d6e98da9
+                stepCounter: 1ddc7208-20cb-460e-bd70-8f3d0a031013
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7883c46c-abbd-487f-bcaf-f87e025bce18
+          stepCounter: 859432b2-f9f0-460b-84bc-70355d76272d
+        config: {}
+        dataType: varchar(64)
+        description: ""
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5aaaf01e-7d05-4329-b129-3b5c435ba9b8
+                stepCounter: 1ddc7208-20cb-460e-bd70-8f3d0a031013
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 185e3af8-5c4f-45a1-a150-2b09b3b5de9c
+          stepCounter: 859432b2-f9f0-460b-84bc-70355d76272d
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        isBusinessKey: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b861687-7ce8-491c-a9b1-20ffe0e4f4d2
+                stepCounter: 1ddc7208-20cb-460e-bd70-8f3d0a031013
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8ccc225-46bd-4f43-a128-993dc48682c4
+          stepCounter: 859432b2-f9f0-460b-84bc-70355d76272d
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5671fdf2-7450-420f-abf9-6d3dc39923fc
+          stepCounter: 859432b2-f9f0-460b-84bc-70355d76272d
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: ODS
+            nodeName: LOAD_SNOW_MAPPING_QMS_SITERANKINGS_INTERMEDIARY_TABLE
+        join:
+          joinCondition: FROM {{ ref('ODS', 'LOAD_SNOW_MAPPING_QMS_SITERANKINGS_INTERMEDIARY_TABLE') }} "LOAD_SNOW_MAPPING_QMS_SITERANKINGS_INTERMEDIARY_TABLE"
+        name: ODS_SNOW_MAPPPING_QMS_SITERANKINGS
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPPING_QMS_SITERANKINGS
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,103 @@
+fileVersion: 1
+id: 1ddc7208-20cb-460e-bd70-8f3d0a031013
+name: LOAD_SNOW_MAPPING_QMS_SITERANKINGS_INTERMEDIARY_TABLE
+operation:
+  config:
+    postSQL: ""
+    preSQL: TRUNCATE TABLE {{ ref('ODS', 'LOAD_SNOW_MAPPING_QMS_SITERANKINGS_INTERMEDIARY_TABLE') }}
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e5d4a29-7aed-4cae-9252-a91b06da3c3f
+          stepCounter: 1ddc7208-20cb-460e-bd70-8f3d0a031013
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: PANEL_NO_RPT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 666825d4-a13a-4c08-94d8-09fbf9404fc0
+                stepCounter: 44a0af50-bddf-4e65-870e-23bd056f55ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 849e0c3d-e78e-483a-9319-4675d6e98da9
+          stepCounter: 1ddc7208-20cb-460e-bd70-8f3d0a031013
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: SITE_RANKINGS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77b51e7a-5dba-479e-be1a-24d361c439c1
+                stepCounter: 44a0af50-bddf-4e65-870e-23bd056f55ce
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5aaaf01e-7d05-4329-b129-3b5c435ba9b8
+          stepCounter: 1ddc7208-20cb-460e-bd70-8f3d0a031013
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPPING_QMS_SITERANKINGS'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b861687-7ce8-491c-a9b1-20ffe0e4f4d2
+          stepCounter: 1ddc7208-20cb-460e-bd70-8f3d0a031013
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_QMS_SITERANKINGS
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_QMS_SITERANKINGS') }} "LOAD_SNOW_MAPPING_QMS_SITERANKINGS"
+        name: LOAD_SNOW_MAPPING_QMS_SITERANKINGS_INTERMEDIARY_TABLE
+        noLinkRefs: []
+  name: LOAD_SNOW_MAPPING_QMS_SITERANKINGS_INTERMEDIARY_TABLE
+  overrideSQL: false
+  schema: ""
+  sqlType: "20"
+  type: sql
+  version: 1
+type: Node

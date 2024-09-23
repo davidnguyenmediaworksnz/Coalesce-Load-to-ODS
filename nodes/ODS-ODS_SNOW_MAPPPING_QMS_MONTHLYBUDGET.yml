@@ -1,0 +1,226 @@
+fileVersion: 1
+id: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+name: ODS_SNOW_MAPPPING_QMS_MONTHLYBUDGET
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7233c1b5-2b61-4820-bfbe-1170115a6c9d
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: FIN_YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 107eb326-8758-40e9-b742-b65e52ba12d7
+                stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa9047c6-fd99-4fa8-a3d4-21e04a5e3bcf
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: MONTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6b3bbdef-ce8a-40fb-b364-5056f04a79a8
+                stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 888147f1-8dc3-44f4-837b-0a57e0f76362
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: REPORT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1bd828fc-477f-4bad-8abb-1e39b117c3db
+                stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0212035-72a9-4105-9de4-a4b8fbd84df0
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: BUDGET_MODEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d8398e7-1268-4ba2-9d8e-d704cfad2e6d
+                stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 88cc8667-8dcd-42c1-a6a5-2b5e88709538
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: BUDGET_CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9f0cbb44-339e-4dd8-a337-322446526d22
+                stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 928b386b-9101-4502-9526-9122aeafe860
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: BUDGET_CATEGORY_DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c231d4c0-2a84-4916-9e18-1fe0e44136b0
+                stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1c825e7f-ed3b-47b8-9303-6a7f65bf2051
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2c8a538c-3798-4196-9c01-7863daee296e
+                stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d734002-34bc-4423-8aa9-54b4912d044f
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: NOTES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6201916-22a3-4146-a756-ad2540b7e908
+                stepCounter: 321158e8-001f-4ffa-af2e-4de6e113b68a
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d143b675-d76b-4807-93ed-b12791696fc3
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPPING_QMS_MONTHLYBUDGET'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ecf8bcf-f44f-43fb-9a83-79e231d68d25
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16bc045a-0236-4fa4-8ef6-eaba6c93f9a1
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1ffd4a1-4571-478e-9937-93c3feebd148
+          stepCounter: 98b003f1-e76c-4aa8-b84d-6160d3f55c19
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPPING_QMS_MONTHLYBUDGET
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPPING_QMS_MONTHLYBUDGET') }} "LOAD_SNOW_MAPPPING_QMS_MONTHLYBUDGET"
+        name: ODS_SNOW_MAPPPING_QMS_MONTHLYBUDGET
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPPING_QMS_MONTHLYBUDGET
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

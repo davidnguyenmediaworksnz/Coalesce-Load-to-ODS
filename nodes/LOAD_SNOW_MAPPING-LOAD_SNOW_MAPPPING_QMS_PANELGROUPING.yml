@@ -1,0 +1,58 @@
+fileVersion: 1
+id: b5500c66-0ecb-43ed-8552-2253193f5ec2
+name: LOAD_SNOW_MAPPPING_QMS_PANELGROUPING
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: LOAD_SNOW_MAPPING
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7802cc94-e702-4e2c-b142-768ae19b0063
+          stepCounter: b5500c66-0ecb-43ed-8552-2253193f5ec2
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PANEL_GROUPING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1feeb366-c0fb-4054-b5d7-af11ef1aa760
+          stepCounter: b5500c66-0ecb-43ed-8552-2253193f5ec2
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: PANEL_NO
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPPING_QMS_PANELGROUPING') }}
+  name: LOAD_SNOW_MAPPPING_QMS_PANELGROUPING
+  schema: ""
+  sqlType: Source
+  table: LOAD_SNOW_MAPPPING_QMS_PANELGROUPING
+  type: sourceInput
+  version: 1
+type: Node

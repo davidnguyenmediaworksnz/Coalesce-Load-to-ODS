@@ -1,0 +1,118 @@
+fileVersion: 1
+id: 521e6290-c16b-4fe9-965d-bf9d236592b2
+name: LOAD_SNOW_MAPPPING_QMS_SALESCHANNEL_INTERMEDIARY_TABLE
+operation:
+  config:
+    postSQL: ""
+    preSQL: TRUNCATE TABLE {{ ref('ODS', 'LOAD_SNOW_MAPPPING_QMS_SALESCHANNEL_INTERMEDIARY_TABLE') }}
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08c78460-e557-48af-95ee-695cf151c87e
+          stepCounter: 521e6290-c16b-4fe9-965d-bf9d236592b2
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: UID_SALES_REP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5fb13af-e144-4300-89b4-aa04d5434f9d
+                stepCounter: 5dce1cd3-db59-4feb-b4bd-38bc826e739e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b2c73d7-f3d1-4e1f-adac-72bef5bbead5
+          stepCounter: 521e6290-c16b-4fe9-965d-bf9d236592b2
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        isBusinessKey: true
+        name: SALES_REP_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 38b94623-379b-43f6-882b-41c65ca6c144
+                stepCounter: 5dce1cd3-db59-4feb-b4bd-38bc826e739e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4b3cacd-6454-4fe0-9661-be80d4aeb2ce
+          stepCounter: 521e6290-c16b-4fe9-965d-bf9d236592b2
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: SALES_CHANNEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e71530fa-13f3-41e0-9286-d520e548a000
+                stepCounter: 5dce1cd3-db59-4feb-b4bd-38bc826e739e
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c50d7646-1ca4-44f7-b60e-a3ce008806dd
+          stepCounter: 521e6290-c16b-4fe9-965d-bf9d236592b2
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPPING_QMS_SALESCHANNEL'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf4529bf-6a50-461a-8b2c-adb289358ee4
+          stepCounter: 521e6290-c16b-4fe9-965d-bf9d236592b2
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPPING_QMS_SALESCHANNEL
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPPING_QMS_SALESCHANNEL') }} "LOAD_SNOW_MAPPPING_QMS_SALESCHANNEL"
+        name: LOAD_SNOW_MAPPPING_QMS_SALESCHANNEL_INTERMEDIARY_TABLE
+        noLinkRefs: []
+  name: LOAD_SNOW_MAPPPING_QMS_SALESCHANNEL_INTERMEDIARY_TABLE
+  overrideSQL: false
+  schema: ""
+  sqlType: "20"
+  type: sql
+  version: 1
+type: Node

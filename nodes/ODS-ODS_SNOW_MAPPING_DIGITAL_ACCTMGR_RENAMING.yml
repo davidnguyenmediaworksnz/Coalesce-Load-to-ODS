@@ -1,0 +1,165 @@
+fileVersion: 1
+id: ebfbad77-767e-4a08-9a46-639bfde81fb1
+name: ODS_SNOW_MAPPING_DIGITAL_ACCTMGR_RENAMING
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63c45102-d9e1-4f1f-bb77-455ad9f23be1
+          stepCounter: ebfbad77-767e-4a08-9a46-639bfde81fb1
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: MW_CONTACT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d87a3fd-f78e-473a-a8c1-a4057d127a8a
+                stepCounter: 5984e172-ce2c-42a5-9f14-deb480351628
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c576d738-e5df-453c-a7c0-4701bc790865
+          stepCounter: ebfbad77-767e-4a08-9a46-639bfde81fb1
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: AM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6aa9e40f-6eb1-4284-ba87-aad242c86236
+                stepCounter: 5984e172-ce2c-42a5-9f14-deb480351628
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d6fafd1-9697-444c-b39d-9397fc0c286d
+          stepCounter: ebfbad77-767e-4a08-9a46-639bfde81fb1
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: MARKET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 146d2732-e77e-4ef2-b03d-024f4a4c92a2
+                stepCounter: 5984e172-ce2c-42a5-9f14-deb480351628
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf5ca204-4503-4713-ad82-d80764c4abaf
+          stepCounter: ebfbad77-767e-4a08-9a46-639bfde81fb1
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: POD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d6c0c26a-1a14-472d-8163-13fba917204e
+                stepCounter: 5984e172-ce2c-42a5-9f14-deb480351628
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff47e342-83ea-4945-934c-4a00a2b1ae97
+          stepCounter: ebfbad77-767e-4a08-9a46-639bfde81fb1
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_RENAMING'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d06c0843-415e-499e-af0b-37ddb895f1ae
+          stepCounter: ebfbad77-767e-4a08-9a46-639bfde81fb1
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d2ec0ff-62e9-41ee-9f3d-c28e0d8beed2
+          stepCounter: ebfbad77-767e-4a08-9a46-639bfde81fb1
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9b9a666-86e0-48f3-8338-c81065d51807
+          stepCounter: ebfbad77-767e-4a08-9a46-639bfde81fb1
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_RENAMING
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_RENAMING') }} "LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_RENAMING"
+        name: ODS_SNOW_MAPPING_DIGITAL_ACCTMGR_RENAMING
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_DIGITAL_ACCTMGR_RENAMING
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

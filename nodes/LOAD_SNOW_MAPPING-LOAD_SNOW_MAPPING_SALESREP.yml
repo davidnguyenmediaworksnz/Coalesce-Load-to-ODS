@@ -1,0 +1,172 @@
+fileVersion: 1
+id: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+name: LOAD_SNOW_MAPPING_SALESREP
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: LOAD_SNOW_MAPPING
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 908a5121-80ec-46b5-b8da-7a5fc897f4a5
+          stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+        config: {}
+        dataType: VARCHAR(75)
+        defaultValue: ""
+        description: ""
+        name: DRIVE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94297616-b889-4d06-a7da-cfa645f2fe71
+          stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: SALES_REP_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0778b331-5a4b-441f-9e7f-593551975f4a
+          stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: EMAIL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a66fa69f-3692-4ef3-8a82-3841a391714e
+          stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+        config: {}
+        dataType: VARCHAR(75)
+        defaultValue: ""
+        description: ""
+        name: HR_EMPLOYEE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76979ce9-53b2-4451-a165-56dd1fe034d7
+          stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+        config: {}
+        dataType: VARCHAR(75)
+        defaultValue: ""
+        description: ""
+        name: SALES_MANAGER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e77e6a8-c447-458c-ab3b-cfd70aeba0ac
+          stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+        config: {}
+        dataType: VARCHAR(75)
+        defaultValue: ""
+        description: ""
+        name: GENERAL_MANAGER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c663d51f-4b02-49da-85e3-0f1aed83af9d
+          stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+        config: {}
+        dataType: VARCHAR(75)
+        defaultValue: ""
+        description: ""
+        name: REGIONAL_MAAGER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 255903e5-2bf6-474f-8b82-578beb2d7a5c
+          stepCounter: 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: REGION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_SALESREP') }}
+  name: LOAD_SNOW_MAPPING_SALESREP
+  schema: ""
+  sqlType: Source
+  table: LOAD_SNOW_MAPPING_SALESREP
+  type: sourceInput
+  version: 1
+type: Node

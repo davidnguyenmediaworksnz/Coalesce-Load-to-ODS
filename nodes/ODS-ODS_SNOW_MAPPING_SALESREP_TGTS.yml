@@ -1,0 +1,250 @@
+fileVersion: 1
+id: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+name: ODS_SNOW_MAPPING_SALESREP_TGTS
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6eaab8d9-446d-4100-be8a-0bc68bac426a
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        isBusinessKey: true
+        name: REP_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 50fee44a-356b-459d-82f6-7d60850e5e7e
+                stepCounter: 55a357fe-8af3-45b4-bc96-ff0a293b1ee6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c78e5bb-a201-4618-9a20-62122d82f3f3
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        isBusinessKey: true
+        name: SALES_REP_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 765f593c-d09e-4d12-b8e6-0870512e5cdc
+                stepCounter: 55a357fe-8af3-45b4-bc96-ff0a293b1ee6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfc35a81-4bc8-4a50-b492-e185e5a1c970
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        isBusinessKey: true
+        name: SALES_CHANNEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae305a2a-566a-4040-ad28-5d92abe8119f
+                stepCounter: 55a357fe-8af3-45b4-bc96-ff0a293b1ee6
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eba9dc28-bc90-4698-96fa-fbcf89701171
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: varchar(256)
+        defaultValue: ""
+        description: ""
+        isBusinessKey: true
+        keyColumnType: None
+        name: SOURCE_SYSTEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae305a2a-566a-4040-ad28-5d92abe8119f
+                stepCounter: 55a357fe-8af3-45b4-bc96-ff0a293b1ee6
+            transform: |-
+              CASE WHEN load_snow_mapping_salesrep_tgts.sales_channel='Digital' 
+                         THEN 'SITEMANAGER'
+                         WHEN load_snow_mapping_salesrep_tgts.sales_channel ='Out of Home' 
+                         THEN 'QMS FUSION'
+                         ELSE 'DRIVE'
+                         END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c9e3633-5879-4121-9118-a984b59bd38a
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: varchar(256)
+        defaultValue: ""
+        description: ""
+        isBusinessKey: true
+        keyColumnType: None
+        name: SOURCE_GROUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN load_snow_mapping_salesrep_tgts.sales_channel='Digital' 
+                         THEN 'DIGITAL'
+                         WHEN load_snow_mapping_salesrep_tgts.sales_channel ='Out of Home' 
+                         THEN 'OUTDOOR'
+                         ELSE 'RADIO'
+                         END
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6ccdcf2-2d59-4010-945c-ca89dcd0a6c0
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: TARGET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f966a8ea-25af-4840-8346-220df5f85386
+                stepCounter: 55a357fe-8af3-45b4-bc96-ff0a293b1ee6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa6a9872-34ff-4854-b223-129cc69c50b5
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: VARCHAR(75)
+        description: ""
+        name: CHANNEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 23ab5e0d-bbf1-4c87-bbf2-5c03f28403a2
+                stepCounter: 55a357fe-8af3-45b4-bc96-ff0a293b1ee6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56567c07-9d7b-471c-a684-7a617e4ddf92
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b405aa0a-3afc-487a-8232-2ae93e8298c5
+                stepCounter: 55a357fe-8af3-45b4-bc96-ff0a293b1ee6
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c4af3e0-0f52-41b9-9d6f-4ce5f161e2e3
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPING_SALESREP_TGTS'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b48ccda5-f728-4fcc-b467-3c98d233a40d
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b0df89f-87a6-439b-b129-a61164885495
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b74bce17-1bde-4dfe-97d0-7fd1a775385f
+          stepCounter: 184fdbae-02a0-4c53-907b-b0311b3e1a06
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_SALESREP_TGTS
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_SALESREP_TGTS') }} "LOAD_SNOW_MAPPING_SALESREP_TGTS"
+        name: ODS_SNOW_MAPPING_SALESREP_TGTS
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_SALESREP_TGTS
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

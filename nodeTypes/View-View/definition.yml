@@ -2,7 +2,7 @@ fileVersion: 1
 id: View
 isDisabled: true
 metadata:
-  defaultStorageLocation: null
+  defaultStorageLocation: ODS
   error: null
   nodeMetadataSpec: |
     capitalized: View

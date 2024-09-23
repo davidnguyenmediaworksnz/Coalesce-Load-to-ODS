@@ -1,0 +1,166 @@
+fileVersion: 1
+id: d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+name: ODS_SNOW_MAPPING_ALL_AGENCY_POD
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9f8a181-53c8-4cf2-9bc4-f0adacebd4e0
+          stepCounter: d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        isBusinessKey: true
+        name: ORIGINAL_AGENCY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 51f7bf25-9441-4df5-8000-2c9997a897c3
+                stepCounter: 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: de9c50cf-e5dd-45ab-9519-5dd3ada1f162
+          stepCounter: d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: MAPPED_AGENCY_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 48465245-9ee4-4e42-abab-c6c79f3df6e0
+                stepCounter: 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7defb65a-a04f-49d1-a536-57af331a92f0
+          stepCounter: d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: POD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 89448876-5ce6-47c5-9815-b2c53af567c0
+                stepCounter: 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6feb3a8-c295-4a7d-b58b-514bfd5d1426
+          stepCounter: d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        isBusinessKey: true
+        name: SOURCE_SYSTEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: edbef78b-0e69-4892-8f77-9357e58c2640
+                stepCounter: 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbc7879b-c8c1-4731-9b66-e53a2aebe2da
+          stepCounter: d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPING_ALL_AGENCY_POD'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f19bd0fc-4ce2-42fa-9a8c-ef75e955aa8d
+          stepCounter: d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9156ebd-d007-479f-9a76-c111502064a9
+          stepCounter: d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 85fc13fe-7fce-4dda-b837-e80489e4c935
+          stepCounter: d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_ALL_AGENCY_POD
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_ALL_AGENCY_POD') }} "LOAD_SNOW_MAPPING_ALL_AGENCY_POD"
+        name: ODS_SNOW_MAPPING_ALL_AGENCY_POD
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_ALL_AGENCY_POD
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

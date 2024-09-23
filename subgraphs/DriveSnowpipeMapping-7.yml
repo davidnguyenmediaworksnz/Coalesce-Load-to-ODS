@@ -1,0 +1,32 @@
+fileVersion: 1
+id: "7"
+name: Drive Snowpipe Mapping
+steps:
+  - 0e19acd8-b21e-4181-a619-91577a5194ca
+  - 12a83dda-ea0a-4d82-ac8e-f7b8edbc6fbb
+  - 184fdbae-02a0-4c53-907b-b0311b3e1a06
+  - 307aa02b-58d6-4e5d-9d03-819c1a607c2c
+  - 55a357fe-8af3-45b4-bc96-ff0a293b1ee6
+  - 5984e172-ce2c-42a5-9f14-deb480351628
+  - 5b0a55e4-c747-4141-89b7-5db340721473
+  - 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+  - 6fc3457d-2a54-4ab1-837c-40bdda40047a
+  - 704b9c4e-21ee-4292-b707-ce8f23b8ba43
+  - 7f905595-acd2-4a79-b49a-9bfab5473596
+  - 86d74b90-7856-4ca3-ab40-96770c007648
+  - 8b1c2744-c3da-4596-8e5f-43979522bde9
+  - 90db957a-0d63-4bb1-a4b9-ff1ca22226fd
+  - 9dceaa20-2627-414d-a80b-339d0dc5518a
+  - cf0c48bd-6efa-4739-9eaf-3e2928a576fd
+  - d0b8ca70-b6b0-4bc7-a9c0-2939070aa42d
+  - d947f84f-f676-452e-a120-71a2c5c593e0
+  - dab7e2b5-0fc2-450c-beea-ae5eba6454aa
+  - dca12d66-3f94-432b-87ca-415a9608a30b
+  - def7315a-5d58-4b6e-b576-7a9bda1e41ec
+  - defa5939-2381-4e1b-ae6a-e5dfc951a876
+  - ebfbad77-767e-4a08-9a46-639bfde81fb1
+  - ec15d9aa-1721-4971-a2bb-948dff848812
+  - efce5e9b-d068-41da-8814-7a8633df6cca
+  - f3cf86e0-1d7f-4185-a74b-41460fc74658
+type: Subgraph
+version: 1

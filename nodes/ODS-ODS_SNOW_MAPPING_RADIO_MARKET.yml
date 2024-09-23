@@ -1,0 +1,138 @@
+fileVersion: 1
+id: ec15d9aa-1721-4971-a2bb-948dff848812
+name: ODS_SNOW_MAPPING_RADIO_MARKET
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8ab3aa3-2017-46d5-aec7-e10a87b20b4e
+          stepCounter: ec15d9aa-1721-4971-a2bb-948dff848812
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: MARKET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8866bccf-bd6e-47fd-98cd-907616cf3388
+                stepCounter: 86d74b90-7856-4ca3-ab40-96770c007648
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe69db2a-188b-4121-b368-9fd9307c9b1a
+          stepCounter: ec15d9aa-1721-4971-a2bb-948dff848812
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: MAP_MARKET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6d43f1a-eaa9-4042-a293-3fe358330946
+                stepCounter: 86d74b90-7856-4ca3-ab40-96770c007648
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f6c1932-8f9c-4e02-9581-64a8d96aa25a
+          stepCounter: ec15d9aa-1721-4971-a2bb-948dff848812
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPING_RADIO_MARKET'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bce89163-52c7-4418-8224-a013f8991082
+          stepCounter: ec15d9aa-1721-4971-a2bb-948dff848812
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe8f3887-1701-49fa-a09f-a0cb93df239a
+          stepCounter: ec15d9aa-1721-4971-a2bb-948dff848812
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95e97b39-e1ec-4180-9637-06cd01b00efb
+          stepCounter: ec15d9aa-1721-4971-a2bb-948dff848812
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_RADIO_MARKET
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_RADIO_MARKET') }} "LOAD_SNOW_MAPPING_RADIO_MARKET"
+        name: ODS_SNOW_MAPPING_RADIO_MARKET
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_RADIO_MARKET
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

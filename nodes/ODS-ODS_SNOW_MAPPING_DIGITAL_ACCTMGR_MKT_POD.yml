@@ -1,0 +1,168 @@
+fileVersion: 1
+id: 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+name: ODS_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 726505cd-8128-408e-a55b-985d92bab43f
+          stepCounter: 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: MW_CONTACT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2d3de80-aeab-4e7a-84c0-a4961ad13dfd
+                stepCounter: 8b1c2744-c3da-4596-8e5f-43979522bde9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b86fbc65-63ac-4691-b797-dfe780fa58f1
+          stepCounter: 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: AM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6b1c0a6f-72af-461c-8b83-2ee0d2d1391c
+                stepCounter: 8b1c2744-c3da-4596-8e5f-43979522bde9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c30392ea-ab90-46be-8870-63d9cea7dfc6
+          stepCounter: 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: MARKET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d9ff2022-d992-4c11-952c-4c1f196508c4
+                stepCounter: 8b1c2744-c3da-4596-8e5f-43979522bde9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65d86327-ec56-4525-8037-961b7e577186
+          stepCounter: 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: POD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ded82ea1-3596-4aae-99fd-692f337c124f
+                stepCounter: 8b1c2744-c3da-4596-8e5f-43979522bde9
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5763c717-6d60-45c6-ac0c-84c4cfc6cdc1
+          stepCounter: 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7663147-95a6-43af-b18a-d1b701deff7c
+          stepCounter: 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c21203f9-e0fe-4941-9d6c-99ed2ed2042c
+          stepCounter: 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84934e9a-3c40-40fa-b506-182c9607ffc5
+          stepCounter: 5d1fd11a-ee3d-43c3-be6b-ab6812535bf6
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD') }} "LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD"
+        name: ODS_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

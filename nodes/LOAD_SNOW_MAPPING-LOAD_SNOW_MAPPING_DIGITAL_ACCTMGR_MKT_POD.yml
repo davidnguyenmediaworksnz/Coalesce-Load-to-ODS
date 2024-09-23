@@ -1,0 +1,96 @@
+fileVersion: 1
+id: 8b1c2744-c3da-4596-8e5f-43979522bde9
+name: LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: LOAD_SNOW_MAPPING
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2d3de80-aeab-4e7a-84c0-a4961ad13dfd
+          stepCounter: 8b1c2744-c3da-4596-8e5f-43979522bde9
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: MW_CONTACT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b1c0a6f-72af-461c-8b83-2ee0d2d1391c
+          stepCounter: 8b1c2744-c3da-4596-8e5f-43979522bde9
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: AM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9ff2022-d992-4c11-952c-4c1f196508c4
+          stepCounter: 8b1c2744-c3da-4596-8e5f-43979522bde9
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: MARKET
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ded82ea1-3596-4aae-99fd-692f337c124f
+          stepCounter: 8b1c2744-c3da-4596-8e5f-43979522bde9
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: POD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD') }}
+  name: LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD
+  schema: ""
+  sqlType: Source
+  table: LOAD_SNOW_MAPPING_DIGITAL_ACCTMGR_MKT_POD
+  type: sourceInput
+  version: 1
+type: Node

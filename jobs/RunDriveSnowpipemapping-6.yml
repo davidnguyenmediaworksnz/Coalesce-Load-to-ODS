@@ -1,0 +1,7 @@
+excludeSelector: ""
+fileVersion: 1
+id: "6"
+includeSelector: "{subgraph:\"Drive Snowpipe Mapping\"}"
+name: Run Drive Snowpipe mapping
+type: Job
+version: 2

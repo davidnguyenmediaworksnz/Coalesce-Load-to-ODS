@@ -1,0 +1,137 @@
+fileVersion: 1
+id: dab7e2b5-0fc2-450c-beea-ae5eba6454aa
+name: ODS_SNOW_MAPPING_DIGITAL_PROPERTY
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: ODS
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 72eedd80-b8cc-45a8-afdb-0c71bead9e94
+          stepCounter: dab7e2b5-0fc2-450c-beea-ae5eba6454aa
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        isBusinessKey: true
+        name: DIGI_PROPERTIES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ff92935b-645a-4adc-8ebf-820e759ecb69
+                stepCounter: 307aa02b-58d6-4e5d-9d03-819c1a607c2c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 85a3a865-7942-4a01-9c10-3af724cade8b
+          stepCounter: dab7e2b5-0fc2-450c-beea-ae5eba6454aa
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: MAPPING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2c8a6dc9-685d-4e05-972e-edcf05a2251d
+                stepCounter: 307aa02b-58d6-4e5d-9d03-819c1a607c2c
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 72dba6a5-c1e7-4783-8022-d79bec4451c4
+          stepCounter: dab7e2b5-0fc2-450c-beea-ae5eba6454aa
+        config: {}
+        dataType: varchar(64)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Snowpipe.LOAD.LOAD_SNOW_MAPPING_DIGITAL_PROPERTY'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86f9c996-4ee4-433e-84eb-7bb429139890
+          stepCounter: dab7e2b5-0fc2-450c-beea-ae5eba6454aa
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 78a5fc67-ca80-4a9f-8675-a76aa3ed77a9
+          stepCounter: dab7e2b5-0fc2-450c-beea-ae5eba6454aa
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a4d7c43c-7ab7-480f-bd01-0ab948e4a338
+          stepCounter: dab7e2b5-0fc2-450c-beea-ae5eba6454aa
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: DSS_UPDATE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: LOAD_SNOW_MAPPING
+            nodeName: LOAD_SNOW_MAPPING_DIGITAL_PROPERTY
+        join:
+          joinCondition: FROM {{ ref('LOAD_SNOW_MAPPING', 'LOAD_SNOW_MAPPING_DIGITAL_PROPERTY') }} "LOAD_SNOW_MAPPING_DIGITAL_PROPERTY"
+        name: ODS_SNOW_MAPPING_DIGITAL_PROPERTY
+        noLinkRefs: []
+  name: ODS_SNOW_MAPPING_DIGITAL_PROPERTY
+  overrideSQL: false
+  schema: ""
+  sqlType: "18"
+  type: sql
+  version: 1
+type: Node

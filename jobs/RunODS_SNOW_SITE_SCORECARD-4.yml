@@ -1,7 +1,7 @@
 excludeSelector: ""
 fileVersion: 1
 id: "4"
-includeSelector: ""
+includeSelector: "{subgraph:\"ODS_SNOW_SITE_SCORECARD\"}"
 name: Run ODS_SNOW_SITE_SCORECARD
 type: Job
 version: 2

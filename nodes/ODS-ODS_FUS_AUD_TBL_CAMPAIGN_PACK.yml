@@ -534,7 +534,7 @@ operation:
         defaultValue: ""
         description: ""
         isSystemCreateDate: true
-        name: DSS_CREATE_DATE
+        name: DSS_CREATE_TIME
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -551,7 +551,7 @@ operation:
         defaultValue: ""
         description: ""
         isSystemUpdateDate: true
-        name: DSS_UPDATE_DATE
+        name: DSS_UPDATE_TIME
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -572,7 +572,7 @@ operation:
   name: ODS_FUS_AUD_TBL_CAMPAIGN_PACK
   overrideSQL: false
   schema: ""
-  sqlType: "10"
+  sqlType: "21"
   type: sql
   version: 1
 type: Node

@@ -22,7 +22,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_SIZE
         nullable: true
         sourceColumnReferences:
@@ -37,7 +36,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_SALES_REP
         nullable: true
         sourceColumnReferences:
@@ -52,7 +50,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_SALES_COMMISSION_STRUCTURE
         nullable: true
         sourceColumnReferences:
@@ -67,7 +64,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_REPORT_CODE
         nullable: true
         sourceColumnReferences:
@@ -82,7 +78,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_R_SALES_OFFICE
         nullable: true
         sourceColumnReferences:
@@ -97,7 +92,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_R_ORIGINATING__AVAILABILITY_PSG
         nullable: true
         sourceColumnReferences:
@@ -112,7 +106,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_PRODUCTION_GROUP
         nullable: true
         sourceColumnReferences:
@@ -127,7 +120,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_POSTER_TYPE
         nullable: true
         sourceColumnReferences:
@@ -142,7 +134,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_PLAN
         nullable: true
         sourceColumnReferences:
@@ -157,7 +148,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_PANEL
         nullable: true
         sourceColumnReferences:
@@ -172,7 +162,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_CAMPAIGN
         nullable: true
         sourceColumnReferences:
@@ -187,7 +176,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_BOOKING_TYPE
         nullable: true
         sourceColumnReferences:
@@ -217,7 +205,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_AMOUNT_BOOKING
         nullable: true
         sourceColumnReferences:
@@ -232,7 +219,6 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        isBusinessKey: true
         name: UID_AGENCY_REP
         nullable: true
         sourceColumnReferences:
@@ -575,8 +561,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 36b37629-9e75-4826-a9c2-168dd9a6dfc2
-                stepCounter: 593b99cd-21fc-4c9d-99ab-d3cc3162f5b3
+              - columnCounter: 4845a294-6a7a-4eb2-b359-8fab5ef0dbae
+                stepCounter: a8f45f2f-fe79-4661-92e8-98c5de57950d
             transform: ""
       - acceptedValues:
           strictMatch: true
@@ -590,7 +576,7 @@ operation:
         defaultValue: ""
         description: ""
         isSystemCreateDate: true
-        name: DSS_CREATE_DATE
+        name: DSS_CREATE_TIME
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -607,7 +593,7 @@ operation:
         defaultValue: ""
         description: ""
         isSystemUpdateDate: true
-        name: DSS_UPDATE_DATE
+        name: DSS_UPDATE_TIME
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -628,7 +614,7 @@ operation:
   name: ODS_FUS_AUD_TBL_BOOKING
   overrideSQL: false
   schema: ""
-  sqlType: "10"
+  sqlType: "21"
   type: sql
   version: 1
 type: Node

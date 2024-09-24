@@ -410,7 +410,7 @@ operation:
         defaultValue: ""
         description: ""
         isSystemCreateDate: true
-        name: DSS_CREATE_DATE
+        name: DSS_CREATE_TIME
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -427,7 +427,7 @@ operation:
         defaultValue: ""
         description: ""
         isSystemUpdateDate: true
-        name: DSS_UPDATE_DATE
+        name: DSS_UPDATE_TIME
         nullable: true
         sourceColumnReferences:
           - columnReferences: []

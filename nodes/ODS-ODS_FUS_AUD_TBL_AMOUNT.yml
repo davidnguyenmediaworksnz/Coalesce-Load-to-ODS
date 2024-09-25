@@ -197,7 +197,7 @@ operation:
   name: ODS_FUS_AUD_TBL_AMOUNT
   overrideSQL: false
   schema: ""
-  sqlType: "21"
+  sqlType: "22"
   type: sql
   version: 1
 type: Node

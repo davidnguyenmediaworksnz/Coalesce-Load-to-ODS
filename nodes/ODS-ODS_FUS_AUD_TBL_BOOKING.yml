@@ -561,8 +561,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 4845a294-6a7a-4eb2-b359-8fab5ef0dbae
-                stepCounter: a8f45f2f-fe79-4661-92e8-98c5de57950d
+              - columnCounter: 36b37629-9e75-4826-a9c2-168dd9a6dfc2
+                stepCounter: 593b99cd-21fc-4c9d-99ab-d3cc3162f5b3
             transform: ""
       - acceptedValues:
           strictMatch: true

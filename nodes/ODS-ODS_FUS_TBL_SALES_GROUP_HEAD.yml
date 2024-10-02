@@ -3,7 +3,7 @@ id: b75df524-83df-440c-aebd-212ab343a24d
 name: ODS_FUS_TBL_SALES_GROUP_HEAD
 operation:
   config:
-    postSQL: ""
+    postSQL: TRUNCATE TABLE {{ ref('ODS', 'ODS_FUS_TBL_SALES_GROUP_HEAD') }}
     preSQL: ""
     testsEnabled: true
   database: ""

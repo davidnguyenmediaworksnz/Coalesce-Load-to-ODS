@@ -10,5 +10,5 @@ mappingDefinitions:
   SRC:
     database: MW_DW_PROD
     schema: LOAD
-name: Dev
+name: Dev_load_raw_data
 type: Environment
